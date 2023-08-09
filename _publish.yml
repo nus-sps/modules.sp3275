@@ -1,0 +1,4 @@
+- source: Climate.qmd
+  quarto-pub:
+    - id: 21924116-b3fc-42e8-8140-e9310f7436f9
+      url: 'https://derekyuenyj.quarto.pub/atmosphere_and_climate'

@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Lead authors: Derek Yuen, Jace Han   Corresponding author: Dr.&nbsp;Linda Sellou">
+
+<title>Theme 1: How does Earth’s atmosphere influence its climate?</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="Chapter1_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Chapter1_files/libs/quarto-html/quarto.js"></script>
+<script src="Chapter1_files/libs/quarto-html/popper.min.js"></script>
+<script src="Chapter1_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Chapter1_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Chapter1_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Chapter1_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Chapter1_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Chapter1_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Chapter1_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">1 | OVERVIEW</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">2 | INTRODUCTION</a></li>
+  <li><a href="#energy-balance-models-ebms" id="toc-energy-balance-models-ebms" class="nav-link" data-scroll-target="#energy-balance-models-ebms">3 | ENERGY BALANCE MODELS (EBMs)</a></li>
+  <li><a href="#simple-radiative-equilibrium-with-no-atmosphere" id="toc-simple-radiative-equilibrium-with-no-atmosphere" class="nav-link" data-scroll-target="#simple-radiative-equilibrium-with-no-atmosphere">4 | SIMPLE RADIATIVE EQUILIBRIUM WITH NO ATMOSPHERE</a></li>
+  <li><a href="#one-layer-model" id="toc-one-layer-model" class="nav-link" data-scroll-target="#one-layer-model">5 | ONE-LAYER MODEL</a></li>
+  <li><a href="#temperature-evolution-model" id="toc-temperature-evolution-model" class="nav-link" data-scroll-target="#temperature-evolution-model">6 | TEMPERATURE EVOLUTION MODEL</a></li>
+  <li><a href="#the-push-over-the-edge" id="toc-the-push-over-the-edge" class="nav-link" data-scroll-target="#the-push-over-the-edge">7 | THE PUSH OVER THE EDGE</a></li>
+  <li><a href="#the-ice-albedo-model" id="toc-the-ice-albedo-model" class="nav-link" data-scroll-target="#the-ice-albedo-model">8 | THE ICE-ALBEDO MODEL</a></li>
+  <li><a href="#deliverables" id="toc-deliverables" class="nav-link" data-scroll-target="#deliverables">9 | DELIVERABLES</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">10 | REFERENCES</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Theme 1: How does Earth’s atmosphere influence its climate?</h1>
+<p class="subtitle lead">Understanding Earth’s Climate and Energy Balance Models (EBMs)</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Lead authors: Derek Yuen, Jace Han <br> Corresponding author: Dr.&nbsp;Linda Sellou </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">1 | OVERVIEW</h2>
+<section id="learning-objectives" class="level4">
+<h4 class="anchored" data-anchor-id="learning-objectives">LEARNING OBJECTIVES</h4>
+<ul>
+<li>Understand the role of the atmosphere and climate in sustaining life on Earth.</li>
+<li>Understand how Earth’s climate changed over time, and what makes it stable.</li>
+<li>Understand the factors and the complexity behind modelling climate systems.</li>
+<li>Learn about simple Energy Balance Models and discuss the assumptions behind the models.</li>
+</ul>
+</section>
+<section id="preamble" class="level4">
+<h4 class="anchored" data-anchor-id="preamble">PREAMBLE</h4>
+<p style="text-align: justify;">
+In this chapter, we will explore various energy balance models to try to simulate the climate on Earth. In particular, we are interested in simulating Earth’s temperature and see how the various factors on Earth interplay with it. We will first understand Earth’s temperature as a result of its distance from the Sun, following which we’ll explore the importance of planetary atmospheres through the one-layer model. From the time evolution model, we are able to observe how Earth’s temperature slowly equilibrates over time. Finally, we explore the different equilibrium states of planet Earth following changes in the Sun’s luminosity.
+</p>
+</section>
+</section>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">2 | INTRODUCTION</h2>
+<section id="the-role-of-earths-atmosphere" class="level4">
+<h4 class="anchored" data-anchor-id="the-role-of-earths-atmosphere">2.1 THE ROLE OF EARTH’S ATMOSPHERE</h4>
+<p style="text-align: justify;">
+Earth’s atmosphere is a thin layer of gas that surrounds the planet, mainly composed of nitrogen and oxygen. How the atmosphere interacts and responds to the components of the different subsystems shows how interconnected the environment is. For example, heat differences in the atmosphere caused by varying amounts of sunlight received drives wind movement, affecting ocean currents and precipitation distribution. Volcanic outgassing from the geosphere supplies the atmosphere with trace gases and carbon from Earth’s interior. Life on Earth also modifies the composition of the atmosphere through respiration and photosynthesis. Hence, the atmosphere can be seen as a consequence of, and essential for, life (Lewis, 2020).
+</p>
+<blockquote class="blockquote">
+<p><strong>Discussion corner</strong></p>
+<p style="text-align: justify;">
+Think about how the atmosphere interacts with the different subsystems of Earth: the <strong>Geosphere</strong>, the <strong>Hydrosphere</strong>, the <strong>Biosphere</strong> and others (eg. space).
+</p>
+</blockquote>
+</section>
+<section id="earths-stable-climate" class="level4">
+<h4 class="anchored" data-anchor-id="earths-stable-climate">2.2 EARTH’S STABLE CLIMATE</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://scx2.b-cdn.net/gfx/news/2023/ancient-magma-reveals.jpg" title="Figure 1: Evidence of the past: Zircons" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption class="figure-caption"><strong>Figure 1.</strong> Evidence of the past: Zircons</figcaption>
+</figure>
+</div>
+<p style="text-align: justify;">
+The current earliest evidence of liquid water existing on Earth dates back to 4.4 billion years ago found in zircons. (Wilde et al., 2001) This suggests that Earth’s temperature has remained in a narrow range that supports liquid water despite various changes, such as in the Sun’s luminosity, throughout Earth’s history. Climate stabilisation is vital for the security and continuity of Earth’s inhabitants.
+</p>
+</section>
+<section id="sdg-13-climate-action" class="level4">
+<h4 class="anchored" data-anchor-id="sdg-13-climate-action">2.3 SDG 13: CLIMATE ACTION</h4>
+<p style="text-align: justify;">
+In recent years, a warming trend in the climate has drawn worldwide attention as it is proceeding at an unprecedented rate in Earth’s history. It is especially significant as it is unambiguously a by-product of anthropogenic development since the 20th century. Scientists have documented evidence of this phenomenon across the globe that revealed a climate that is shifting. (NASA, n.d.)
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Chapter1Media\Figure2.png" title="Figure 2: Evidence of a changing climate. Adapted from NASA: Global Climate Change" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption"><strong>Figure 2.</strong> Evidence of a changing climate. Adapted from NASA: Global Climate Change</figcaption>
+</figure>
+</div>
+<p style="text-align: justify;">
+What’s concerning is how these changes have severely impacted our everyday lives. For example, extreme weather events have disrupted the provision of basic amenities such as water, sanitation and education in many countries, not to mention the large-scale infrastructure damages that follow these events. A change in global climate has also negatively impacted agricultural production and resulted in food security issues.
+</p>
+<p style="text-align: justify;">
+Under the push for global collaboration on sustainable development, the United Nations (UN) adopted 17 Sustainable Development Goals (SDG). <strong>Goal 13: Climate action</strong> primarily aims to:
+</p>
+<ol type="1">
+<li>Improve the resilience and adaptability of all countries to climate-related hazards.</li>
+<li>Vitalize initiatives against climate change in national policies and planning.</li>
+<li>Emphasize education and develop institutional capacities on climate change resilience, adaptability, impact reduction and early warning.</li>
+</ol>
+</section>
+</section>
+<section id="energy-balance-models-ebms" class="level2">
+<h2 class="anchored" data-anchor-id="energy-balance-models-ebms">3 | ENERGY BALANCE MODELS (EBMs)</h2>
+<p style="text-align: justify;">
+In the following chapters, we will understand Earth’s climate by modelling it using Energy Balance Models (EBMs). These models are simple but very useful to investigate Earth’s climate. They do not take into account the many dynamics of the climate (wind, atmospheric circulation, ocean currents or convection in oceans or atmosphere) but only focus on the energetics and thermodynamics of the climate system.
+</p>
+<p><strong>Table 1:</strong> Four different EBMs to model Earth’s temperature with increasing complexity <img src="Chapter1Media\Table1.png" class="img-fluid" style="width:100.0%" data-fig-align="center"></p>
+</section>
+<section id="simple-radiative-equilibrium-with-no-atmosphere" class="level2">
+<h2 class="anchored" data-anchor-id="simple-radiative-equilibrium-with-no-atmosphere">4 | SIMPLE RADIATIVE EQUILIBRIUM WITH NO ATMOSPHERE</h2>
+<p style="text-align: justify;">
+Since Earth’s temperature has been stable over a long geological time, Earth can be perceived to be in a state of radiative equilibrium. It is a state in which the total thermal radiation received by the object is equivalent to the total thermal radiation being emitted. In short, <strong>the flow of incoming energy = the flow of outgoing energy</strong> (<strong>Figure 3</strong>). Using this assumption, we can calculate the effective temperature of a planet at radiative equilibrium.
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Chapter1Media\Figure3.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption"><strong>Figure 3.</strong> Incoming solar radiation (left) and outgoing Earth radiation (right)</figcaption>
+</figure>
+</div>
+<p style="text-align: justify;">
+Although the energy of the geosphere is significant, most of the energy received on Earth important for life originates from the Sun (Incoming energy). The received energy then excites atoms and molecules on Earth, raising the temperature of the corresponding material and results in thermal infrared energy radiated (Outgoing energy). Let’s now have a look at how we will be calculating the amount of energy received and emitted by a planet.
+</p>
+<section id="blackbody-radiation" class="level4">
+<h4 class="anchored" data-anchor-id="blackbody-radiation">4.1 BLACKBODY RADIATION</h4>
+<p style="text-align: justify;">
+We can use the concept of blackbody radiation to model the Sun and also the Earth’s flow of energy. A blackbody refers to a model system which absorbs all incident electromagnetic radiation and for it to remain in thermal equilibrium, it must emit radiation as well (blackbody radiation). The blackbody emission spectrum depends on the temperature of the object and follows <strong>Planck’s law</strong>, <strong>Wien’s law</strong> and the <strong>Stefan-Boltzmann law</strong>.
+</p>
+<section id="a-plancks-law" class="level5">
+<h5 class="anchored" data-anchor-id="a-plancks-law">(A) Planck’s Law</h5>
+<p style="text-align: justify;">
+Planck’s law shows the electromagnetic spectral distribution of the radiation coming from a blackbody at a specific temperature in thermal equilibrium.
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Chapter1Media\Figure4.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption"><strong>Figure 4:</strong> (Left) Blackbody emission spectra of an object with increasing temperature (3000K to 6000K). (Right) Blackbody emission spectra of the Sun and the Earth</figcaption>
+</figure>
+</div>
+</section>
+<section id="b-wiens-law" class="level5">
+<h5 class="anchored" data-anchor-id="b-wiens-law">(B) Wien’s Law</h5>
+<p style="text-align: justify;">
+Wien’s law gives you the relationship between the wavelength of the maximum emission and the temperature of the blackbody object.
+</p>
+<p><span class="math display">\[\begin{equation}
+\tag{1}
+\lambda_{max} = \frac{2898}{T}
+\end{equation}\]</span></p>
+<p style="text-align: justify;">
+To find the wavelength (<span class="math inline">\(\lambda_{max}\)</span>, <span class="math inline">\(\mu m\)</span>) of the maximum emission, divide 2898 by the temperature (<span class="math inline">\(T\)</span>,<span class="math inline">\(K\)</span>).
+</p>
+</section>
+<section id="c-stefan-boltzmann-law" class="level5">
+<h5 class="anchored" data-anchor-id="c-stefan-boltzmann-law">(C) Stefan-Boltzmann Law</h5>
+<p style="text-align: justify;">
+The Stefan-Boltzmann Law gives you the flux of energy (the rate of transfer of energy per unit area) emitted by the blackbody object (<span class="math inline">\(F\)</span>) at a specific temperature (for a perfect blackbody we have):
+</p>
+<p><span class="math display">\[\begin{equation}
+\tag{2}
+F = \sigma T^{4}
+\end{equation}\]</span></p>
+<p style="text-align: justify;">
+The flux (<span class="math inline">\(F\)</span>, <span class="math inline">\(W m^{-2}\)</span>) emitted is the product of the temperature (<span class="math inline">\(T\)</span>, <span class="math inline">\(K\)</span>) of the blackbody and the Stefan-Boltzmann constant (<span class="math inline">\(\sigma = 5.67 * 10^{-8} W m^{-2} K^{-4}\)</span>).
+</p>
+</section>
+<section id="d-calculation-of-flux-received-at-the-surface-of-a-planet" class="level5">
+<h5 class="anchored" data-anchor-id="d-calculation-of-flux-received-at-the-surface-of-a-planet">(D) Calculation of flux received at the surface of a planet</h5>
+<p style="text-align: justify;">
+To calculate the amount of flux received on the surface of a planet from the star <span class="math inline">\(S_{0}\)</span>, we have to utilise the inverse square law (<strong>Figure 5</strong>). It says that the energy density is inversely proportional to the square of the distance from the source, while the total energy emitted from the source is constant.
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Chapter1Media\Figure5.jpg" title="Figure 5: Illustration of energy dispersion through the inverse square law." class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption"><strong>Figure 5:</strong> Illustration of energy dispersion through the inverse square law.</figcaption>
+</figure>
+</div>
+<p><span class="math display">\[\begin{equation}
+\tag{3}
+\frac{F}{S_{0}} = \frac{R_{p}^{2}}{r_{s}^{2}}
+\end{equation}\]</span></p>
+<p style="text-align: justify;">
+The ratio between the flux emitted from the surface of the sun (<span class="math inline">\(F\)</span>, <span class="math inline">\(W m^{-2}\)</span>) and the flux received on a planet (<span class="math inline">\(S_{0}\)</span>, <span class="math inline">\(W m^{-2}\)</span>) equals the ratio between the square of the planet’s distance from the sun (<span class="math inline">\(R_{p}\)</span>, <span class="math inline">\(m\)</span>) and the square of the Sun’s radius (<span class="math inline">\(r_{s}\)</span>, <span class="math inline">\(m\)</span>).
+</p>
+</section>
+</section>
+<section id="albedo" class="level4">
+<h4 class="anchored" data-anchor-id="albedo">4.2 ALBEDO</h4>
+<p style="text-align: justify;">
+Not all the light from the Sun is received by a planet, with one part being reflected off. The amount reflected depends on the albedo of the surface <span class="math inline">\(\alpha\)</span> (<strong>Table 2</strong>).
+</p>
+<p><span class="math display">\[\begin{equation}
+\tag{4}
+S_0' = S_0\alpha
+\end{equation}\]</span></p>
+<p style="text-align: justify;">
+The flux reflected by the planet (<span class="math inline">\(S_0'\)</span>, <span class="math inline">\(W m^{-2}\)</span>) is the product of the flux received by the planet (<span class="math inline">\(S_0\)</span>, <span class="math inline">\(W m^{-2}\)</span>) and its albedo (<span class="math inline">\(\alpha\)</span>).
+</p>
+<p><strong>Table 2:</strong> Albedo of various surfaces</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Chapter1Media\Table2.png" class="img-fluid figure-img" style="width:50.0%"></p>
+</figure>
+</div>
+</section>
+<section id="effective-temperature-of-a-planet" class="level4">
+<h4 class="anchored" data-anchor-id="effective-temperature-of-a-planet">4.3 EFFECTIVE TEMPERATURE OF A PLANET</h4>
+<p style="text-align: justify;">
+We are now able to calculate the effective temperature of a planet at radiative equilibrium. The planet absorbs the energy from the Sun (Solar flux, <span class="math inline">\(S_0\)</span>) and emits radiation as a blackbody (Planet flux, <span class="math inline">\(F_p\)</span>). The albedo (<span class="math inline">\(\alpha\)</span>) is the fraction of light being reflected.
+</p>
+<p style="text-align: justify;">
+To convert flux to energy, we have to multiply it by its effective surface area (<strong>Figure 6</strong>). A planet intercepts incoming solar flux with its cross-sectional area <span class="math inline">\(\pi R^2\)</span>. However, the planet flux is emitted over the entire spherical surface area of the planet of 4<span class="math inline">\(\pi R^2\)</span>.
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Chapter1Media\Figure6.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption class="figure-caption"><strong>Figure 6:</strong> The effective surface areas of incoming solar flux and the planet flux</figcaption>
+</figure>
+</div>
+<p>We can then derive the equation for a planet’s temperature at energy balance equilibrium to be:</p>
+<p><span class="math display">\[\begin{equation}
+\tag{5}
+T_{p} = \sqrt[4]{\frac{S_0(1-\alpha)}{4\sigma}}
+\end{equation}\]</span></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href=""><strong>Exercise 1</strong></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href=""><strong>Model Answer</strong></a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>Derive the equation for a planet’s temperature at energy balance equilibrium: <span class="math display">\[T_{p} = \sqrt[4]{\frac{S_0(1-\alpha)}{4\sigma}}\]</span></p>
+<p><strong>Hint:</strong> Start from <span class="math inline">\(E_{absorbed} = E_{emitted}\)</span></p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<span class="math display">\[E_{absorbed} = E_{emitted}\]</span> <span class="math display">\[E_{received} - E_{reflected} = E_{emitted}\]</span>
+<p style="text-align: center;">
+<span class="math inline">\(S_0\)</span> <span class="math inline">\(*\)</span> area of cross-section - <span class="math inline">\(S_0\)</span> <span class="math inline">\(*\)</span> <span class="math inline">\(\alpha\)</span> <span class="math inline">\(*\)</span> area of cross-section = <span class="math inline">\(F_p\)</span> <span class="math inline">\(*\)</span> Planet’s surface area
+</p>
+<p><span class="math display">\[S_0 * \pi r_p^2 * (1 - \alpha) = \sigma T_p^4 * 4 \pi r_p^2\]</span> <span class="math display">\[T_{p} = \sqrt[4]{\frac{S_0(1-\alpha)}{4\sigma}}\]</span></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Modelling Questions
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>M1.</strong> Write code to calculate the flux received on a planet (<span class="math inline">\(S_0\)</span>) given the following parameters: <br> <strong>1.</strong> Temperature of the star (Sun), <span class="math inline">\(T_s\)</span> = <span class="math inline">\(5780\)</span> K <br> <strong>2.</strong> Radius of the star (Sun), <span class="math inline">\(r_s\)</span> = <span class="math inline">\(6.96 * 10^8 m\)</span> <br> <strong>3.</strong> Distance of the planet (Earth) from the star (Sun), <span class="math inline">\(R_p\)</span> = 1 AU <br><br> <strong>Hint:</strong> Use Stefan-Boltzmann Law (2) and the Inverse square law (3).</p>
+<hr>
+<p><strong>M2.</strong> Using <span class="math inline">\(S_0\)</span> from <strong>M1</strong>, calculate the effective temperature of the planet (Earth) at radiative equilibrium given an albedo (<span class="math inline">\(\alpha\)</span>) of 0.3.</p>
+<hr>
+<p><strong>M3.</strong> Using the code you constructed, calculate the effective temperatures of <strong>Venus</strong>, <strong>Earth</strong> and <strong>Mars</strong> using the parameters below (albedo and distance from the Sun). Are the simulated temperatures the same as the experimentally measured temperatures?<br><br><strong>Venus</strong><br>Albedo = 0.8, Distance from the Sun (AU) = 0.72, Measured temperature (K) = 730<br><strong>Earth</strong><br>Albedo = 0.3, Distance from the Sun (AU) = 1, Measured temperature (K) = 288<br><strong>Mars</strong><br>Albedo = 0.22, Distance from the Sun (AU) = 1.52, Measured temperature (K) = 218</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="one-layer-model" class="level2">
+<h2 class="anchored" data-anchor-id="one-layer-model">5 | ONE-LAYER MODEL</h2>
+<section id="greenhouse-gases" class="level4">
+<h4 class="anchored" data-anchor-id="greenhouse-gases">5.1 GREENHOUSE GASES</h4>
+<p style="text-align: justify;">
+From the results of <strong>M3</strong>, a difference between the temperature modelled using your code and the actual temperature measured can be observed. This is because the simple radiative equilibrium model does not take planetary atmosphere into consideration. Although present in very small amounts in the atmosphere, some gases have a great impact on Earth’s temperature. They are called greenhouse gases.
+</p>
+<p style="text-align: justify;">
+The greenhouse effect is the trapping of infra-red radiation by gases, resulting in an increase of the surface temperature. Infra-red active molecules show a change in their dipole moment (permanent dipole is not necessary) during vibration as seen in <strong>Figure 7</strong>.
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Chapter1Media\Figure7.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption"><strong>Figure 7:</strong> Molecular vibrations of N<sub>2</sub>, O<sub>2</sub>, CO<sub>2</sub> and H<sub>2</sub>O. You can view the animations <a href="https://scied.ucar.edu/learning-zone/atmosphere/molecular-vibration-modes">here</a>.</figcaption>
+</figure>
+</div>
+<p style="text-align: justify;">
+Greenhouse gases absorb the infra-red radiation emitted by the solid Earth and re-emit them back into the atmosphere. <strong>Figure 8</strong> shows how much infra-red radiation emitted from the Earth is re-absorbed by the atmosphere. In particular, we can take note of the absorption bands of water and carbon dioxide.
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Chapter1Media\Figure8.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption"><strong>Figure 8:</strong> The amount of greenhouse gas IR-absorption is shown in green and the Earth blackbody emitted radiation is shown in orange.</figcaption>
+</figure>
+</div>
+<p style="text-align: justify;">
+For <strong>M3</strong>, Venus has a thick atmosphere that is primarily comprised of CO<sub>2</sub> (around 96.5%). Hence, its strong greenhouse effect on Venus retains more heat in its atmosphere, resulting in the observed large temperature increment. In contrast, while Mars also has a predominantly CO<sub>2</sub> atmosphere (around 95.32%), its atmosphere is really thin, and thus plays a relatively weak role in retaining heat. As such, the previous model can provide a close approximation to Mars’ temperature.
+</p>
+</section>
+<section id="one-layer-model-1" class="level4">
+<h4 class="anchored" data-anchor-id="one-layer-model-1">5.2 ONE-LAYER MODEL</h4>
+<p style="text-align: justify;">
+The one-layer model is a simple model to show the effect of the atmosphere on a planet’s temperature. <strong>Figure 9</strong> shows the solar radiation <span class="math inline">\(F_s\)</span> entering the atmosphere and only a fraction <span class="math inline">\(\tau_s\)</span> goes through and reaches the planet’s surface. Similarly, the flux emitted by the planet surface <span class="math inline">\(F_g\)</span> comes out of the layer of atmosphere with a fraction <span class="math inline">\(\tau_g\)</span>. The values for <span class="math inline">\(\tau_s\)</span> and <span class="math inline">\(\tau_g\)</span> are 0.8 and 0.1 respectively on Earth. Finally, <span class="math inline">\(F_a\)</span> represents the radiation emitted by the atmosphere (also modelled as a blackbody).
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Chapter1Media\Figure9.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption"><strong>Figure 9:</strong> <strong>Left</strong>, One-layer model: <span class="math inline">\(F_s\)</span>, <span class="math inline">\(F_g\)</span> and <span class="math inline">\(F_a\)</span> are respectively the emission from the sun, the Earth’s surface and the atmosphere (with <span class="math inline">\(\tau_s\)</span> = 0.8 and <span class="math inline">\(\tau_g\)</span> = 0.1). <strong>Right</strong>, The blackbody emission spectrum of the sun and measured solar radiation before and after going through the atmosphere.</figcaption>
+</figure>
+</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href=""><strong>Exercise 2</strong></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href=""><strong>Model Answer</strong></a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p>What does <span class="math inline">\(\tau_s\)</span> and <span class="math inline">\(\tau_g\)</span> represent? Explain the difference in value.</p>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p style="text-align: justify;">
+</p><p><span class="math inline">\(\tau_s\)</span> represents the fraction of solar flux going through the atmosphere. As the primary wavelengths of incoming solar energy is in the visible spectrum, and the atmosphere is not opaque to visible light, most of the solar flux is able to pass through, resulting in a high value of 0.8.</p>
+On the contrary, <span class="math inline">\(\tau_g\)</span> represents the fraction of planet flux passing through the atmosphere into space. As the primary emissions are in the infra-red range allowing for greenhouse gas IR-absorption, not much of the emissions goes through the atmosphere, resulting in a low value of 0.1.
+<p></p>
+</div>
+</div>
+</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href=""><strong>Exercise 3</strong></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href=""><strong>Model Answer</strong></a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<p style="text-align: justify;">
+Assume there is a radiative equilibrium both at the top of the atmosphere and at the surface of the Earth (bottom of the atmosphere), derive an expression for the flux emitted from the ground (<span class="math inline">\(F_g\)</span>) as a function of <span class="math inline">\(F_s\)</span>, <span class="math inline">\(\tau_s\)</span>, <span class="math inline">\(\tau_g\)</span> (see <strong>Figure 9</strong>)
+</p>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<p>At the top of the atmosphere:</p>
+<p><span class="math display">\[F_s = F_a + F_g\tau_g\]</span> <span class="math display">\[F_a = F_s - F_g\tau_g\]</span> At the bottom of the atmosphere:</p>
+<p><span class="math display">\[F_s\tau_s + F_a = F_g\]</span> <span class="math display">\[F_a = F_g - F_s\tau_s\]</span> Combining (1) and (2):</p>
+<p><span class="math display">\[F_s - F_g\tau_g = F_g - F_s\tau_s\]</span> <span class="math display">\[F_s(1+\tau_s) = F_g(1+\tau_g)\]</span> <span class="math display">\[F_g = F_s\frac{(1+\tau_s)}{(1+\tau_g)}\]</span></p>
+</div>
+</div>
+</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href=""><strong>Exercise 4</strong></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href=""><strong>Model Answer</strong></a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<p>From the previous simplified equation in <strong>Exercise 3</strong>, derive the equation to calculate the effective temperature of the planet (<span class="math inline">\(T_p\)</span>) with an atmosphere.</p>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<p><span class="math display">\[F_g = F_s\frac{(1+\tau_s)}{(1+\tau_g)}\]</span> <span class="math display">\[\sigma T^4 * 4\pi R^2 = \frac{S_0 * \pi R^2 * (1-\alpha)*(1+\tau_s)}{(1+\tau_g)}\]</span> <span class="math display">\[T = \sqrt[4]{\frac{S_0 * (1-\alpha)*(1+\tau_s)}{4\sigma(1+\tau_g)}}\]</span></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Modelling Questions
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>M4.</strong> Construct a code and calculate the effective temperature of Earth with a simulated atmosphere of <span class="math inline">\(\tau_s\)</span> = 0.8 and <span class="math inline">\(\tau_g\)</span> = 0.1.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="temperature-evolution-model" class="level2">
+<h2 class="anchored" data-anchor-id="temperature-evolution-model">6 | TEMPERATURE EVOLUTION MODEL</h2>
+<section id="earth-as-a-greybody" class="level4">
+<h4 class="anchored" data-anchor-id="earth-as-a-greybody">6.1 EARTH AS A GREYBODY</h4>
+<p>So far, we have modelled the planet as a perfect blackbody and therefore the emitted flux Fg (<span class="math inline">\(W m^{-2}\)</span>):</p>
+<p><span class="math display">\[\begin{equation}
+F_{g} = \epsilon\sigma * T^4 = \sigma * T^4
+\end{equation}\]</span></p>
+<p style="text-align: justify;">
+<span class="math inline">\(\epsilon\)</span> is the emissivity of the body. It varies from 0 (no emission) to 1 (perfect blackbody emission). A body with an emissivity less than 1 is called a greybody.
+</p>
+<p style="text-align: justify;">
+From the one-layer model, we see that the atmosphere affects a planet’s surface temperature greatly through the introduction of <span class="math inline">\(\tau\)</span>. Comparing it to the simple radiative equilibrium model which assumes the Earth as a perfect blackbody (<span class="math inline">\(\epsilon\)</span> = 1), we can find that it does not model well the real surface temperature.
+</p>
+<p style="text-align: justify;">
+In essence, due to the insulative blanket that the atmosphere causes, the emitted flux back to space will be lower. Hence, the emissivity of the body is lower and the surface temperature will be higher. By including the coefficient <span class="math inline">\(\epsilon\)</span>, we can model better the real surface temperature. Note we cannot directly measure <span class="math inline">\(\epsilon\)</span>, but we can adjust the value according to temperature and flux observations.
+</p>
+</section>
+<section id="temperature-linearisation" class="level4">
+<h4 class="anchored" data-anchor-id="temperature-linearisation">6.2 TEMPERATURE LINEARISATION</h4>
+<p style="text-align: justify;">
+In order to make the modelling easier, we’ll be doing temperature linearisation (possible because <span class="math inline">\(T_c\)</span> = <span class="math inline">\(\pm\)</span> 20<span class="math inline">\(^\circ\)</span>C). Sellers (1969) and Budyko (1969) in the 60’s demonstrated that Earth’s energy emission could be written in a linear form with the temperature. Much later, it was proven to fit very well with energy flux observations.
+</p>
+<p>Since for small <span class="math inline">\(x\)</span>, we can write <span class="math inline">\((1+x)^4 \approx 1 + 4x\)</span></p>
+<p><span class="math display">\[T_K^4 = (T_0 + T_c)^4 = T_0^4 * (1 + \frac{T_c}{T_0})^4 \approx T_0^4 * (1+4\frac{T_c}{T_0})\]</span> The temperature in Kelvin (<span class="math inline">\(T_K\)</span>), the 0<span class="math inline">\(^\circ\)</span>C in Kelvin (<span class="math inline">\(T_0\)</span> = 273.15K) and temperature in Celcius (<span class="math inline">\(T_c\)</span>)</p>
+<p><span class="math display">\[{T_K}^4 = {T_0}^4 + 4{T_0}^3 * T_c = a + bT_c\]</span></p>
+<p>As <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are constants, we can simplify:</p>
+<p><span class="math display">\[\begin{equation}
+\tag{6}
+F_g = \epsilon\sigma * {T_K}^4 = \epsilon\sigma(a + bT_c) = A + BT_c
+\end{equation}\]</span></p>
+<p style="text-align: justify;">
+With A (<span class="math inline">\(W m^{-2}\)</span>) and B (<span class="math inline">\(W m^{-2}\)</span> <span class="math inline">\(^\circ C\)</span>) constants. A and B reflect the <strong>emissivity</strong> of the atmosphere. They will be given and they vary with the type of atmosphere (amount of greenhouse gases). More or less, the constants A and B can tell us the following:
+</p>
+<p><strong>Table 3:</strong> Representation of the constants A and B</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Chapter1Media\Table3.png" class="img-fluid figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+<p>You can find in <strong>Table 4</strong>, different values reported in literature.</p>
+<p><strong>Table 4:</strong> Values of A and B reported in literature</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Chapter1Media\Table4.png" class="img-fluid figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Modelling Questions
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>M5.</strong> Recalling what the linearisation constants (A and B) stand for, translate the equations into code and calculate the temperature of Earth using the constants from McGuffie (2005).</p>
+</div>
+</div>
+</div>
+</section>
+<section id="temperature-evolution-model-1" class="level4">
+<h4 class="anchored" data-anchor-id="temperature-evolution-model-1">6.3 TEMPERATURE EVOLUTION MODEL</h4>
+<p style="text-align: justify;">
+In this model, we are interested to find the change of temperature with time and find the equilibrium temperature of the planet as it reaches radiative equilibrium. We will be modelling Earth’s emission as written in <em>5.2</em> using the values for a greybody. Thus, the equations for Earth’s average energy gain (<span class="math inline">\(E_{gain}\)</span>) and energy loss (<span class="math inline">\(E_{loss}\)</span>) for this model would be:
+</p>
+<p><span class="math display">\[E_{gain} = S_0* (1-\alpha)*\pi r^2\]</span> <span class="math display">\[E_{loss} = (A + BT_c) * 4\pi r^2\]</span> Removing the common terms and divide both terms by 4, we’ll get:</p>
+<p><span class="math display">\[E_{gain} = \frac{S_0* (1-\alpha)}{4}\]</span> <span class="math display">\[E_{loss} = A + BT_c\]</span></p>
+<p style="text-align: justify;">
+The absorption of heat of a body is controlled by the heat capacity (C). So, the difference between the energy gain and the energy loss of the Earth can be expressed:
+</p>
+<p><span class="math display">\[\begin{equation}
+\tag{7}
+C * \frac{dT}{dt} = E_{gain} - E_{loss}
+\end{equation}\]</span></p>
+<p>The rate of heat flow (<span class="math inline">\(\frac{dT}{dt}\)</span>) is proportional to the difference between the energy gained and energy loss by Earth.</p>
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Modelling Questions
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Let’s construct a code for a temperature evolution model that simulates how Earth’s temperature slowly equilibrates over time.</p>
+<p><strong>M6.</strong> Calculate Earth’s Heat Capacity (<span class="math inline">\(C\)</span>) based on Earth’s water content. Given:<br>
+<br> Depth of water: <span class="math inline">\(70\)</span> m <br> Density of water: <span class="math inline">\(1.025 * 10^6\)</span> g/m<span class="math inline">\(^3\)</span> <br> Heat capacity of water: <span class="math inline">\(4.186\)</span> J/g<span class="math inline">\(*\)</span>K <br> Ocean coverage: <span class="math inline">\(0.7\)</span></p>
+<hr>
+<p><strong>M7.</strong> Calculate Earth’s average <span class="math inline">\(E_{gain}\)</span> (Energy gain in Watts/m<span class="math inline">\(^2\)</span>). Given:<br>
+<br> <span class="math inline">\(S_0\)</span>: 1370 Watts/m<span class="math inline">\(^2\)</span> <br> Albedo: 0.32</p>
+<hr>
+<p><strong>M8.</strong> Based on the final equation from <strong>5.3</strong>, use the Euler method to simulate Earth’s temperature slowly equilibrating over time from a given initial temperature. After each iteration, store the temperature (<strong>T</strong>) and the time (<strong>t</strong>) in a list to be plotted at the end.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Chapter1Media\Plot1.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+<p>Here are some variables you can consider initializing at the start of the model: <br> <em>Count</em>: To keep track of the number of loops <br> <em>Starting temperature</em> (T_0): 255 K <br> <em>Starting time</em> (t_0): 0 seconds <br> <em>Timestep or dt</em>: 1 Year or 31536000 seconds <br> Two lists to store the time and temperature from each iteration</p>
+<p>You may use the below flowchart to assist in your coding of the iteration loop. <img src="Chapter1Media\FlowChart1.png" class="img-fluid" style="width:100.0%" data-fig-align="center"></p>
+<p>Finally, plot the data obtained.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="the-push-over-the-edge" class="level2">
+<h2 class="anchored" data-anchor-id="the-push-over-the-edge">7 | THE PUSH OVER THE EDGE</h2>
+<section id="tipping-points" class="level4">
+<h4 class="anchored" data-anchor-id="tipping-points">7.1 TIPPING POINTS</h4>
+<p style="text-align: justify;">
+In a climate system, tipping points are what climatologists refer to as vulnerable areas that when triggered, could result in a climate emergency with irreversible consequences (Lenton et al., 2019). Examples of tipping points often being discussed include the melting of the arctic sea ice, deforestation in the Amazon basin and widescale coral bleaching events. Following the recent trend of global warming, climatologists are now concerned of the risk of a cascade of tipping points crossing their critical thresholds, leading to severe repercussions on the climate, our ecosystems and our societies (Wunderling et al., 2021).
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://i.cbc.ca/1.5378521.1575051684!/fileImage/httpImage/raising-the-alarm-climate-tipping-points.jpg" title="Figure 10: Significant tipping points hypothesized and the cascading connections between them." class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption"><strong>Figure 10:</strong> Significant tipping points hypothesized and the cascading connections between them.</figcaption>
+</figure>
+</div>
+</section>
+<section id="feedback-loops" class="level4">
+<h4 class="anchored" data-anchor-id="feedback-loops">7.2 FEEDBACK LOOPS</h4>
+<p style="text-align: justify;">
+To understand climate tipping points, let’s first try to imagine how Earth’s climate would be like given the following situations:
+</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true" href=""><strong>Exercise 5</strong></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false" href=""><strong>Model Answer</strong></a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
+<p>What would happen to the Earth if it experiences an extreme increase of solar insolation? Predict the changes using the water vapor feedback mechanism (<strong>Figure 11</strong>). Explain the mechanism of this feedback. Does it happen easily? Why?<br>
+(Think of the relationship between pressure and the boiling point, <strong>Figure 12</strong>)</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Chapter1Media\Figure11.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption"><strong>Figure 11:</strong> Water vapor feedback.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Chapter1Media\Figure12.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption class="figure-caption"><strong>Figure 12:</strong> The phase diagram of water.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
+<p>From the water vapor feedback mechanism, when Earth experiences an extreme increase of solar insolation, the temperature on Earth would increase, causing more water evaporation to occur on Earth. As water vapor is a greenhouse gas, it would result in the further retainment of heat in the atmosphere, leading to increasing temperatures on Earth. Hence, it is viewed as a positive feedback loop.</p>
+<p>However, it doesn’t happen easily as when there is an increase of water vapor in the air, it results in a higher atmospheric pressure which increases the boiling point of water. As such, the amount of evaporation would reduce. This counter-mechanism helps mediate the water vapor feedback.</p>
+</div>
+</div>
+</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true" href=""><strong>Exercise 6</strong></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false" href=""><strong>Model Answer</strong></a></li></ul>
+<div class="tab-content">
+<div id="tabset-6-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-6-1-tab">
+<p>What would happen to the Earth if it experiences an extreme decrease in solar insolation? Predict the changes using the Ice-albedo feedback mechanism (<strong>Figure 13</strong>). Explain the mechanism of this feedback.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Chapter1Media\Figure13.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption"><strong>Figure 13:</strong> Ice-albedo feedback.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-6-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-2-tab">
+<p>Following the ice-albedo feedback loop, if Earth experiences an extreme decrease in solar insolation, Earth’s temperature would reduce. As a result, the ice caps would extend to lower latitudes from the poles. An increase in polar ice caps results in an increase in planetary albedo, which leads to a reduced amount of energy entering Earth’s climate system. This then further causes a reduction in temperature, completing the positive feedback loop.</p>
+</div>
+</div>
+</div>
+<blockquote class="blockquote">
+<p><strong>Discussion corner</strong></p>
+<p>Can you relate the above two scenarios (Water vapor feedback &amp; Ice-albedo feedback) with Earth or other planets? Explain.</p>
+</blockquote>
+</section>
+</section>
+<section id="the-ice-albedo-model" class="level2">
+<h2 class="anchored" data-anchor-id="the-ice-albedo-model">8 | THE ICE-ALBEDO MODEL</h2>
+<section id="model-description" class="level4">
+<h4 class="anchored" data-anchor-id="model-description">8.1 MODEL DESCRIPTION</h4>
+<p style="text-align: justify;">
+In this final climate model, we will compute the equilibrium temperatures of the Earth following the Ice-albedo model when:
+</p>
+<ol type="1">
+<li>The solar luminosity is increasing</li>
+<li>The solar luminosity is decreasing</li>
+<li>Ice is forming</li>
+</ol>
+<p style="text-align: justify;">
+In our previous models, we have kept the albedo of the planet constant. Now, we will vary the albedo of the planet through the simulation of ice forming on the planet, which in turn is affected by the temperature.
+</p>
+<p style="text-align: justify;">
+This model takes into account the contribution of each latitude (surface area and local temperature) to calculate the average temperature of Earth.
+</p>
+<p>The objectives are:</p>
+<ol type="1">
+<li>Generate the temperature data for a range of solar radiation (<em>luminosity</em>).</li>
+<li>Plot the graph T (<em>temperature</em>) against M (<em>solar multiplier</em>)</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Chapter1Media\Icealbedo.gif" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption"><strong>Figure 14:</strong> Ice-albedo model illustration when solar luminosity is decreasing.</figcaption>
+</figure>
+</div>
+</section>
+<section id="model-set-up" class="level4">
+<h4 class="anchored" data-anchor-id="model-set-up">8.2 MODEL SET-UP</h4>
+<section id="a-energy-gain" class="level5">
+<h5 class="anchored" data-anchor-id="a-energy-gain">(A) Energy gain</h5>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Chapter1Media\Figure14.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption"><strong>Figure 15:</strong> Distribution of the solar flux across latitudes.</figcaption>
+</figure>
+</div>
+<p>We divide the hemisphere in 10 bands of 9<span class="math inline">\(^\circ\)</span> latitude each (<strong>Figure 14</strong>). The area of each band (in fraction) and the local solar flux (<span class="math inline">\(S_i\)</span>) is reported in <strong>Table 5</strong>.</p>
+<p><strong>Table 5:</strong> Area and local solar flux received for each latitude bands.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Chapter1Media\Table5.png" class="img-fluid figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+<p>Use the zonal insolation data (<span class="math inline">\(S_i\)</span>) to calculate <span class="math inline">\(F_{gain}\)</span> at each latitude band.</p>
+<p><span class="math display">\[\begin{equation}
+\tag{8}
+F_{gain} = S_i * (1-\alpha_i) * M
+\end{equation}\]</span></p>
+</section>
+<section id="b-temperature" class="level5">
+<h5 class="anchored" data-anchor-id="b-temperature">(B) Temperature</h5>
+<p>Let’s define the average planet temperature as:</p>
+<p><span class="math display">\[\begin{equation}
+\tag{9}
+T_{avg} = \sum(area_i * T_i)
+\end{equation}\]</span></p>
+</section>
+<section id="c-energy-loss-from-earth" class="level5">
+<h5 class="anchored" data-anchor-id="c-energy-loss-from-earth">(C) Energy loss from Earth</h5>
+<p style="text-align: justify;">
+The energy emitted/lost at each latitude band is given by the local temperature (<span class="math inline">\(T_i\)</span>) and the average temperature (<span class="math inline">\(T_{avg}\)</span>):
+</p>
+<p><span class="math display">\[\begin{equation}
+\tag{10}
+F_{loss} = A + B * T_i + G * (T_i - T_{avg})
+\end{equation}\]</span></p>
+<p>G represents heat transfer coefficient. <span class="math inline">\(F_{loss}\)</span> at each latitude band is then calculated.</p>
+</section>
+</section>
+<section id="local-and-average-albedo" class="level4">
+<h4 class="anchored" data-anchor-id="local-and-average-albedo">8.3 LOCAL AND AVERAGE ALBEDO</h4>
+<p style="text-align: justify;">
+Let’s now find the local albedo (<span class="math inline">\(\alpha_i\)</span>). At each latitude band, the albedo is fixed at 0.3 (current Earth’s albedo) when the temperature is <span class="math inline">\(\ge -10^\circ\)</span>C (critical T), otherwise it is 0.6 (ice albedo). The same way as the temperature, the average albedo of the planet is the sum of the area-weighted albedos.
+</p>
+<p><span class="math display">\[\begin{equation}
+\tag{11}
+\alpha_{average} = \sum(area_i * \alpha_i)
+\end{equation}\]</span></p>
+</section>
+<section id="equilibrium-states" class="level4">
+<h4 class="anchored" data-anchor-id="equilibrium-states">8.4 EQUILIBRIUM STATES</h4>
+<p style="text-align: justify;">
+Our objective is to find the equilibrium average temperature of the planet for a specific solar luminosity (<span class="math inline">\(T_{eq}\)</span> against <span class="math inline">\(M\)</span>). In other words, how does the planet’s temperature change when the overall solar energy received changes.
+</p>
+<p style="text-align: justify;">
+You’ll need to find the average temperature (T) at equilibrium for the values of the solar multiplier (<span class="math inline">\(M\)</span>) going from 0.6 to 1.4. First, run the model by increasing <span class="math inline">\(M\)</span> (0.6 to 1.4) and then by decreasing <span class="math inline">\(M\)</span> (1.4 to 0.6). Collect the equilibrium temperature for each solar multiplier.
+</p>
+<p><span class="math display">\[F_{loss} = A + B * T_i + G * (T_i - T_{avg})\]</span> <span class="math display">\[F_{gain} = S_i * (1-\alpha_i) * M\]</span></p>
+<p>At equilibrium, <span class="math inline">\(F_{gain} = F_{loss}\)</span></p>
+<p><span class="math display">\[F_{gain} = F_{loss} = A + B * T_i + G * (T_i - T_{avg})\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\tag{12}
+T_i = \frac{F_{gain} - A + G * T_{avg}}{(B+G)}
+\end{equation}\]</span></p>
+<p style="text-align: justify;">
+To find the equilibrium average planet temperature (<span class="math inline">\(T_{avg}\)</span>), you will start with an arbitrary condition (i.e.&nbsp;local temperature for each latitude band) and use the iteration method.
+</p>
+</section>
+<section id="initial-conditions" class="level4">
+<h4 class="anchored" data-anchor-id="initial-conditions">8.5 INITIAL CONDITIONS</h4>
+<p>The solar constant is <span class="math inline">\(S_0 * M\)</span> with <span class="math inline">\(M\)</span> ranging from 0.6 to 1.4.</p>
+<p style="text-align: justify;">
+You will assume that it is the same initial temperature (<span class="math inline">\(T_i\)</span> = 255K) at each latitude band (with <span class="math inline">\(M\)</span> = 0.6). Therefore, all local albedos at the initial stage is equivalent to 0.6 (Earth is covered in ice).
+</p>
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Modelling Questions
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Let’s construct a code to understand the ice-albedo model.</p>
+<p>You are given two arrays containing the area of each band and its local solar flux:</p>
+<pre><code># Array containing area of each band and its local solar flux
+Area = np.array([0.156434465, 0.152582529, 0.144973505, 0.133794753, 0.119321529, 0.101910213, 0.08198953, 0.060049992, 0.036631824, 0.012311659])
+S    = np.array([416.6480383, 406.3887808, 386.1228828, 356.349358, 317.8013293, 271.4279772, 218.3711674, 160.4091221, 112.7543514, 73.14499959])
+
+# Constants:
+G, A, B = 3.8, 204, 2.17</code></pre>
+<p><strong>M9.</strong> Initialize two arrays to store the modelled Earth’s bands of temperatures (<em>T_0</em>) and albedos(<em>albedo_0</em>). <em>Have the planet first be -70<span class="math inline">\(^\circ\)</span>C throughout.</em></p>
+<p><strong>Remember:</strong> The critical temperature is <span class="math inline">\(-10^\circ\)</span>C, albedo is 0.3 <span class="math inline">\(\ge -10^\circ\)</span>C and albedo is 0.6 <span class="math inline">\(\le -10^\circ\)</span>C.</p>
+<hr>
+<p><strong>M10.</strong> Understand and complete the flowchart of the ice-albedo model given below. <img src="Chapter1Media\FlowChart2.png" class="img-fluid" style="width:100.0%" data-fig-align="center"></p>
+<hr>
+<p><strong>M11.</strong> Based on the flowchart, construct the code to compute the ice-albedo model and plot the graphs for increasing and decreasing solar multiplier (<span class="math inline">\(M\)</span>).</p>
+</div>
+</div>
+</div>
+</section>
+<section id="understanding-the-graph" class="level4">
+<h4 class="anchored" data-anchor-id="understanding-the-graph">8.6 UNDERSTANDING THE GRAPH</h4>
+<p style="text-align: justify;">
+The ice-albedo model aims to relate the concept of feedback cycles and how they affect the surface temperature of the Earth to achieve equilibrium. In <strong>Exercise 7</strong>, attempt to draw the feedback cycles when surface temperatures drops or when it rises. You’ll find that both feedback cycles show a positive feedback loop which magnifies the effects of the change in solar luminosity.
+</p>
+<p style="text-align: justify;">
+The ice-albedo model show how changes of the Earth’s polar ice caps can have huge effects on the entire planet’s climate. For more information, look into the supplementary materials on Earth’s paleoclimate.
+</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-7-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-1" role="tab" aria-controls="tabset-7-1" aria-selected="true" href=""><strong>Exercise 7</strong></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-2" role="tab" aria-controls="tabset-7-2" aria-selected="false" href=""><strong>Model Answer</strong></a></li></ul>
+<div class="tab-content">
+<div id="tabset-7-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-7-1-tab">
+<p>Illustrate two positive feedback loops when <strong>1.</strong> surface temperatures drops and <strong>2.</strong> when surface temperature rises incorporating the below factors:</p>
+<ul>
+<li>Surface temperature</li>
+<li>Ice Cover</li>
+<li>Earth’s albedo</li>
+<li><span class="math inline">\(F_{gain}\)</span></li>
+</ul>
+</div>
+<div id="tabset-7-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-2-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Chapter1Media\Figure15.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption"><strong>Figure 16:</strong> Positive feedback loops of the Ice-albedo model</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p style="text-align: justify;">
+However, why does the surface temperature trend go differently depending on the increasing or decreasing of the solar luminosity? This phenomenon is a hysteresis. Hysteresis is the dependence of the state of a system on its initial conditions. So, how were the initial conditions different that could help to explain the hysteresis observed in the graph plot of equilibrium temperature against <span class="math inline">\(M\)</span>?
+</p>
+<blockquote class="blockquote">
+<p><strong>Discussion corner</strong></p>
+<p>Why does the surface temperature trend go differently depending on the increasing or decreasing of the solar luminosity?</p>
+</blockquote>
+</section>
+</section>
+<section id="deliverables" class="level2">
+<h2 class="anchored" data-anchor-id="deliverables">9 | DELIVERABLES</h2>
+<section id="learning-flow" class="level4">
+<h4 class="anchored" data-anchor-id="learning-flow">Learning Flow</h4>
+<p style="text-align: justify;">
+Students are to complete the assigned work before their lecture and IS sessions to ensure for a smooth and fruitful discussion session with their groupmates and mentors. Minimum prepatory work for each session has been labelled with “*“.
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Chapter1Media\Deliverables.png" class="img-fluid figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</section>
+<section id="earth-journal" class="level4">
+<h4 class="anchored" data-anchor-id="earth-journal">Earth Journal</h4>
+<p>(<em>For the students concerned</em>)</p>
+<p style="text-align: justify;">
+In your Earth Journal, summarize what are the key concepts and skills you have acquired from this chapter and the significance of the topic. In addition, you can write on the insights that you received from this chapter and what questions you can ask yourself to learn further on the topic. You can also write on how you can apply such knowledge to your major.
+</p>
+</section>
+<section id="climate-presentation" class="level4">
+<h4 class="anchored" data-anchor-id="climate-presentation">Climate Presentation</h4>
+<p>(<em>For the groups concerned</em>)</p>
+<p style="text-align: justify;">
+Prepare a presentation on what the class has learnt in this chapter. The presentation should include the following elements:
+</p>
+<p><strong>1.</strong> Examine and discuss on the various energy balance models learnt<br>
+<strong>2.</strong> Extensions on the topics learnt</p>
+<p style="text-align: justify;">
+Emphasize on the concepts and conclusions obtained from the codes instead of presenting on how to code. Find ways to engage the class better!
+</p>
+</section>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">10 | REFERENCES</h2>
+<p>Budyko, M. I. (1969). The effect of solar radiation variations on the climate of the Earth. <em>Tellus</em>, 21(5), 611-619.</p>
+<p>Cess, R. D. (1976). Climate change: an appraisal of atmospheric feedback mechanisms employing zonal climatology. <em>Journal of atmospheric sciences</em>, 33(10), 1831-1843.</p>
+<p>Lenton, T. M., Rockström, J., Gaffney, O. et al.&nbsp;(2019). Climate tipping points – too risky to bet against. <em>Nature</em> 575, 592-595. https://doi.org/10.1038/d41586-019-03595-0.</p>
+<p>Lewis, S. (2020). How the atmosphere sustains life on Earth. <em>OpenLearn</em>. Retrieved June 23, 2022, from https://www.open.edu/openlearn/science-maths-technology/across-the-sciences/how-the-atmosphere-sustains-life-on-earth.</p>
+<p>McGuffie, K. &amp; Henderson-Sellers, A. (2005). <em>A climate modelling primer</em>. (3rd ed.) John Wiley &amp; Sons. https://doi.org/10.1002/0470857617.</p>
+<p>NASA (n.d.). Climate change: how do we know?. <em>NASA Global Climate Change: Vital Signs of the Planet</em>. Retrieved June 23, 2022, from https://climate.nasa.gov/evidence/.</p>
+<p>Sellers, W. D. (1969). A global climatic model based on the energy balance of the Earth-atmosphere system. <em>Journal of Applied Meteorology</em>, 8(3), 392-400.</p>
+<p>Tung, K. K. (2007). <em>Topics in mathematical modeling</em>. Princeton University Press.</p>
+<p>Wilde, S., Valley, J., Peck, W. et al.&nbsp;(2001). Evidence from detrital zircons for the existence of continental crust and oceans on the Earth 4.4 Gyr ago. <em>Nature</em> 409, 175-178. https://doi.org/10.1038/35051550.</p>
+<p>Wunderling, N., Donges, J. F., Kurths, J., Winkelmann, R. (2021). Interacting tipping elements increase risk of climate domino effects under global warming. <em>Earth system dynamics</em>, 12, 601-619. https://doi.org/10.5194/esd-12-601-2021.</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
