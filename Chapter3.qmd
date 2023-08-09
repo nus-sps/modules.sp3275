@@ -1,0 +1,214 @@
+---
+title: "Theme 3: Water & Oceans"
+subtitle: "Importance of Oceans"
+author: "Lead authors: Seow Ryan, Jensie Low <br> Collaborator: Derek Yuen <br> Corresponding author: Dr Linda Sellou"
+format:
+  html:
+    toc: true
+    toc-location: right
+    code-fold: true
+---
+
+## 1 | OVERVIEW
+
+#### LEARNING OBJECTIVES
+
+-   Able to discuss about marine resources and the importance of protecting ocean systems
+-   Understand equilibrium systems in the ocean (carbon dioxide)
+-   Predict how factors affect these systems and potentially contribute to global warming
+-   Discuss the effects of ocean acidification
+
+## 2 | SDG 14: LIFE BELOW WATER
+
+<p style="text-align: justify;"><a href="https://sdgs.un.org/goals/goal14">Goal 14</a> of the United National Sustainable Development Goals is to conserve and sustainably use the oceans, seas, and marine resources for sustainable development. We will look at why oceans are so important and what processes affect their stability.</p>
+
+![**Figure 1.** SDG 14: Life Below Water 2022 Report, retrieved from UNSD](https://sdgs.un.org/sites/default/files/2022-07/SDG%20Report%202022_Goal%2014%20infographic.png "Figure 1. SDG 14: Life Below Water 2022 Report, retrieved from UNSD"){width="100%"}
+
+> **Discussion corner**
+>
+> <p style="text-align: justify;"> What are some resources derived from the **oceans / seas**?</p>
+
+## 3 | CHEMICAL EQUILIBRIUM
+
+#### 3.1 WHAT IS CHEMICAL EQUILIBRIUM?
+
+<p style="text-align: justify;">**Le Châtelier's Principle (LCP)** states that *if a system at dynamic equilibrium is subject to change, the position of equilibrium shifts to counteract the change, so as to re-establish the state of equilibrium.* In this section, we will explore the concept of chemical equilibrium.</p>
+
+<p style="text-align: justify;">For those who are already familiar with this topic, take this as a quick refresher and help your peers!</p>
+
+> **Discussion corner**
+>
+> <p style="text-align: justify;">What are some different examples of equilibrium in other fields?</p>
+
+#### 3.2 WHAT HAPPENS IF WE APPLY STRESS TO A SYSTEM AT EQUILIBRIUM?
+
+<p style="text-align: justify;">In this section, we explore the tools that we have to assess changes in an equilibrium system. These tools will be useful in predicting changes to a system when a stress is applied.</p>
+
+:::{.callout-tip icon=false}
+
+## Example : Haemoglobin
+
+<p style="text-align: justify;"><a href="https://ib.bioninja.com.au/options/option-d-human-physiology/d6-transport-of-respiratory/oxygen-dissociation-curve.html">**Haemoglobin (Hb)**</a> is a globular protein containing four subunits, increasing the overall capacity for oxygen transport. Each Hb can bind up to four oxygen molecules as shown in **Equation 1**.</p>
+
+
+\begin{equation}
+\tag{1}
+Hb (aq) + 4 O_2 (aq) ⇌ Hb(O_2)_4 (aq)
+\end{equation}
+
+<p style="text-align: justify;">**Carbon monoxide** poisoning is extremely dangerous because carbon monoxide binds **irreversibly** to the haemoglobin subunits to form **carboxyhaemoglobin**.</p>
+
+:::
+
+::: panel-tabset
+### **Exercise 1**
+
+<p style="text-align: justify;">Explain qualitatively, using LCP, how the irreversible change to carboxyhaemoglobin disrupts the equilibrium in **Equation 1**.</p>
+
+### **Model Answer**
+
+<p style="text-align: justify;">When carboxyhaemoglobin is formed, the \[Hb\] present decreases and the position of equilibrium (POE) of (1) shifts to the left to increase the \[Hb\]. Less haemoglobin is able to transport oxygen to organs.</p>
+:::
+
+<p style="text-align: justify;">A quantitative treatment is done by introducing the concept of an equilibrium constant, *K*, which evaluates the ratio of the products to the reactants at dynamic equilibrium at a particular temperature.</p>
+
+::: panel-tabset
+### **Exercise 2**
+
+<p style="text-align: justify;">Write out the *K* expression for **Equation 1** and calculate its value given that when the concentration of O$_2$ is 7.6 $\mu$M, the concentrations of Hb and Hb(O$_2$)$_4$ are equal.</p>
+
+### **Model Answer**
+
+
+\begin{equation}
+K = \frac{a_{Hb(O_2)_4}}{a_{Hb} a_{O_2}{^4}} ≈ \frac{[Hb(O_2)_4]}{[Hb][O_2]^4} = \frac{1}{(7.6 * 10^{-6})^4} = 3.00 * 10^{20}
+\end{equation}
+
+:::
+
+## 4 | EQUILIBRIUM SYSTEMS IN OCEANS
+
+<p style="text-align: justify;">Dry atmospheric air has an average composition of 78% nitrogen gas, 21% oxygen gas, 0.04% carbon dioxide gas, 0.9% argon, and the remainder consist of other gases such as hydrogen and methane. In this section, we look at how various phases interact with one another, contributing to the complex equilibria that exists in the oceans. From here, we can then predict the effects of climate change and how disruptions affect the oceanic equilibria and the cumulative effect on the planet itself.</p>
+
+<p style="text-align: justify;">In the following sections, we will be looking at solubility, the maximum amount of solute that can be dissolved in a solvent at a particular temperature and pressure. This relates to gaseous and solid solubility before we look back at its applications in the carbonate cycle chemistry in oceans.</p>
+
+#### 4.1 SOLUBILITY OF GASES
+
+<p style="text-align: justify;">**Solubility** is the maximum amount of solute that can be dissolved in a solvent at a particular temperature and pressure and is usually reported in molarity (mol/L).</p>
+
+:::{.callout-tip icon=false}
+
+## Example : Effect Of temperature on dissolved oxygen content
+
+<p style="text-align: justify;">Dissolved oxygen is the free oxygen, O$_2$ (aq), present in seawater that influences the quality of life of the aquatic organisms. Aquatic organisms use dissolved oxygen for respiration, and microbes use it in the decomposition of organic material at the seabed.</p>
+
+![**Figure 2:** Graph of Dissolved Oxygen against Temperature](Chapter3Media\Figure2.png){fig-align="center" width="100%"}  
+
+:::
+
+::: panel-tabset
+### **Exercise 3**
+
+<p style="text-align: justify;">Write the equation for the dissolution of oxygen and its associated *K* expression.</p>
+
+### **Model Answer**
+
+\begin{equation}
+O_2 (g) ⇌  O_2 (aq)  
+\end{equation}
+\begin{equation}
+K = \frac{a_{O_2 (aq)} }{a_{O_2 (g)} }
+\end{equation}
+
+:::
+
+> **Discussion corner**
+>
+> <p style="text-align: justify;">What can be inferred about the energetics of the dissolution of oxygen in water (**Figure 2**)? As a result, how does global warming affect marine life? </p>
+
+#### 4.2 SOLUBILITY OF SOLIDS
+
+<p style="text-align: justify;">Insoluble is a loose adjective to describe salts that precipitate or do not dissolve. However, let’s consider some examples. Sugar is readily soluble, but there is a limit to how much you can add to a cup of tea before it no longer dissolves. Can we then say that sugar is insoluble ? In this case, the “undissolved” sugar is because the cup of tea has already reached its saturation point and no more sugar and dissolve in it anymore. To dissolve more, you can either (1) add more tea (increase volume), or (2) increase the temperature. </p>
+
+<p style="text-align: justify;">Most salts that we label as insoluble should be termed sparingly soluble because they exist in an equilibrium with the solvent system. This is known as the solubility equilibrium.</p>
+
+:::{.callout-tip icon=false}
+## Example : Limewater test for carbon dioxide
+
+<p style="text-align: justify;">The common qualitative analysis test for carbon dioxide gas is to bubble a sample in limewater. A white precipitate of calcium carbonate, CaCO$_3$, is produced. The reaction is as follows:</p>
+
+\begin{equation}
+\tag{2}
+CO_2 (aq) + Ca(OH)_2 (aq) → CaCO_3 (s) + H_2O (l)
+\end{equation}
+
+<p style="text-align: justify;">Limewater contains a *saturated solution* of calcium hydroxide, a sparingly soluble salt.</p>
+:::
+
+> **Discussion corner**
+>
+> <p style="text-align: justify;">By writing the equilibria for carbon dioxide, calcium hydroxide, and calcium carbonate, predict what happens when carbon dioxide continues to be bubbled into limewater after the formation of the white precipitate.</p>
+
+#### 4.3 Effect of carbon emissions in ocean chemistry
+
+<p style="text-align: justify;">Do you ever recall getting told off for blowing bubbles using a straw into your beverage? Theoretically, what that does is at a sufficient concentration, carbonic acid is produced. This occurs when carbon dioxide dissolves in water. The arrow-pushing mechanism is as follows.</p>
+
+![**Figure 3:** Mechanism for the formation of carbonic acid](Chapter3Media\Figure3.png){fig-align="center" width="100%"}  
+
+::: panel-tabset
+### **Exercise 4**
+
+<p style="text-align: justify;">Why does the water molecule readily form a bond with carbon dioxide?</p>
+
+### **Model Answer**
+
+<p style="text-align: justify;">The two electronegative oxygen atoms withdraws electron density away from the central C, making it $\delta$+ and susceptible to nucleophilic attack from the oxygen.</p>
+:::
+
+When carbon dioxide dissolves in water, four equilibrium equations can be set up:  
+
+1. Dissolution of gaseous carbon dioxide to form aqueous carbon dioxide  
+2. Acid-base reaction between carbon dioxide and water to form carbonic acid (H$_2$CO$_3$)  
+3. Dissociation of carbonic acid to form bicarbonate (HCO$_3^-$) and hydrogen ions  
+4. Dissociation of bicarbonate ions to form carbonate and hydrogen ions
+
+> **Discussion corner**
+>
+> <p style="text-align: justify;">Write down the associated chemical equations and their respective *K* expressions.</p>
+
+<p style="text-align: justify;">You will be performing an experiment on ocean acidification during an IS session and the equations above will be relevant to your experiment. Remember to plan your experiment and support your responses and reflections using content from this handout.</p>
+
+## 5 | DELIVERABLES
+
+<p style="text-align: justify;">In this first part of this theme, the basic science that you should have taken away is:</p>
+
+- Application of Le Châtelier’s Principle to predict how equilibrium systems change
+- Basic understanding of the chemical basis of Earth’s processes
+
+<p style="text-align: justify;">The content in this handout will be sufficient to **plan** and **understand** what needs to be done for the **first experiment** on ocean acidification.</p>
+
+#### Lab Worksheet
+
+<p style="text-align: justify;">You will find a copy of the lab worksheet in the Google Classroom. You are required to: </p>
+
+- Read the background and general procedure
+- Plan your experiment **with your group BEFORE your lab session** (discuss with mentor)
+- Submit a completed lab worksheet **BY THE END of your lab session**
+- Refer to lab worksheet for more detailed instructions
+
+## 6 | REFERENCES
+
+*Data used to plot Figure 2 in Python* <a href=http://butane.chem.uiuc.edu/pshapley/GenChem1/L23/2.html>here</a>
+
+ 
+
+## 7 | FURTHER READING
+
+<p style="text-align: justify;">You may look to these sources for inspiration regarding your individual presentation or to supplement your own learning.</p>
+
+- <a href=https://www.acs.org/content/acs/en/climatescience/oceansicerocks/oceanchemistry.html>**Ocean chemistry**</a>
+- **Ocean acidification** [Nandi’s Individual Presentation]  
+- <a href=https://doi.org/10.2138/gselements.15.4.235>**Chemical Weathering**</a>  
+- <a href=https://education.nationalgeographic.org/resource/rock-cycle>**How are rocks formed?**</a> [magma differentiation, crystallisation, rock cycles]  
+- <a href=https://www.nature.com/articles/439675a>**How do volcanoes play a part in climate change and oceans?**</a> [plate tectonics, volcanism]  
+- <a href=https://serc.carleton.edu/eslabs/carbon/6a.html>**How do biological processes drive geological cycles?**</a> [oceanic biological pump]  
