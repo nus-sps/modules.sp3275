@@ -1,0 +1,165 @@
+---
+title: "Theme 3: Water & Oceans"
+subtitle: Water Treatment Methods
+author: "Lead authors: Seow Ryan, Jensie Low <br> Collaborator: Derek Yuen <br> Corresponding author: Dr. Linda Sellou"
+format:
+  html:
+    toc: true
+    toc-location: right
+    code-fold: true
+---
+
+## 1 | OVERVIEW
+
+#### LEARNING OBJECTIVES
+
+-   Discuss about pollution and water treatment methods
+-   Understand basic calibration methods for detection and quantification
+-   Able to apply concepts in basic electrochemistry in water treatment
+
+## 2 | SDG 6: CLEAN WATER AND SANITATION
+
+<p style="text-align: justify;">Goal 6 of the United National Sustainable Development Goals is to ensure access to water and sanitation for all. Evidently, from the COVID-19 pandemic, clean hygiene is very important to prevent the spread of pathogens. As well, there are many other pollutants to get rid of to obtain safe water.
+In this section, we will be discussing methods to test water quality and methods to treat water.</p>
+
+<p style="text-align: justify;">Singapore has four national taps, three of which are methods to ensure self-sustainability in an integrated water system. The NEWater Process (**Figure 1**) is one of the water treatment methods to recycle used water back into potable water, and uses three simple processes of filtration, reverse osmosis, and UV disinfection.</p>
+
+![**Figure 1.** NEWater Technology (Image : PUB Singapore)](Chapter4Media\Figure1.jpg "NEWater Technology (Image : PUB Singapore)"){width="100%"}
+
+> **Discussion corner**
+>
+> <p style="text-align: justify;"> What causes pollution? What are the categories of pollutants? What kinds of treatment methods are used for a specific pollutant?</p>
+
+## 3 | DETECTION & QUANTIFICATION METHODS
+
+<p style="text-align: justify;">The Public Utilities Board (PUB) Singapore tests water samples collected from reservoirs, water works, and water distribution systems around the island at the PUB’s Water Quality Laboratory. More than 500 000 of such tests are conducted annually to ensure that the water quality remains within safe drinking standards that is regulated by the Environmental Public Health (EPH) Water Suitable for Drinking Regulation.</p>
+
+#### 3.1 STANDARD CALIBRATION
+
+:::{.callout-tip icon=false}
+
+## Example: Total Phosphorous Amounts
+
+<p style="text-align: justify;">One of the components tested in water is phosphorous. Total Phosphorous (P) levels should fall within the range of 0.003 – 0.42 mg/L in the water samples. This is important because phosphorous is widely used in fertilisers, pesticides, and detergents. When these compounds (e.g. phosphides, phosphates) leech into local water bodies as agricultural runoff or residential wastewater, it can lead to eutrophication.</p>
+
+<p style="text-align: justify;">One way to measure phosphorous concentration in an unknown sample is by using samples with known concentrations to obtain a calibration curve of signal vs concentration. Since phosphorous samples are generally colourless, colourimetric analysis needs to be done through the addition of a colour reagent.</p>
+
+<p style="text-align: justify;">Ammonium molybdate, (NH$_4$)$_2$MoS$_4$, is added to obtain a phosphomolybdate, (NH$_4$)$_3$OMo$_{12}$O$_{40}$. Ascorbic acid is then added to reduce the complex to form molybdenum blue, a dark blue complex. As a result, the intensity of blue can be said to be directly proportional to the concentration of phosphate content (and hence a measure of Total Phosphorous). The absorbance is measured with UV-vis spectroscopy at 880 nm for a series of standard solutions of phosphates. (Data taken from Shimadzu Applications No. A354)</p>
+:::
+
+**Table 1.** Absorbance values at 880 nm for standard solutions of phosphorous.
+![](Chapter4Media\Table1.png "Table 1. Absorbance values at 880 nm for standard solutions of phosphorous."){width="80%"}
+
+> **Discussion corner**
+>
+> Using any software, plot a calibration curve and determine the value of [P] and its uncertainty. Does this fall within the range of stated by EPH Regulations?
+
+#### 3.2 LIMITATIONS OF ANALYTICAL METHODS
+<p style="text-align: justify;">All analytical methods have their advantages, disadvantages, and their limits. While looking at the advantages of a particular method can help us better select it, it is also important to recognise its limitations (e.g. resolution limits of microscopes, wavelength sensitivity of spectroscopic methods).</p>
+
+<p style="text-align: justify;">One way to test the limits of the calibration curve is by calculating the limits of detection (LoD) and limits of quantification (LoQ). This is also widely used in pharmaceuticals or in clinical laboratory. **LoD** is the lowest concentration of analyte that can be detected by the method that is distinguishable from zero (blank). **LoQ** is the lowest concentration of analyte that can be quantified with reasonable accuracy and repeatability. These two values are useful in determining if your method is suitable.</p>
+
+**Table 2.** Formula and rationale behind LoD and LoQ calculations.
+![](Chapter4Media\Table2.png "Table 2. Formula and rationale behind LoD and LoQ calculations."){width="80%"}
+
+> **Discussion corner**
+>
+> Using the calibration curve from the last discussion corner, determine the LoD and LoQ.
+
+#### 3.3 EXTRA CALIBRATION METHODS (FOR INTERESTED STUDENTS)
+<p style="text-align: justify;">The method used above is known as **external calibration**. This is because we use **standard solutions** that are separate from the unknown / test sample. The advantage of this method lies in its simplicity and hence versatility. By knowing the substance we are testing, we can create standard solutions, plot a curve, and infer values from it. However, because this method is simple, it can be affected by complex systems (e.g. wastewater) where other components influence measurements.</p>
+
+##### (A) Internal Standard 
+<p style="text-align: justify;">The internal standard calibration method is useful to overcome systematic and random error. In this method, a substance, similar in nature to that of the analyte, is added in a known volume to the blank, standards and samples. However, this method is also tedious as more time is required for sample preparation as well as data analysis. Furthermore, this method requires an analyte similar to that of the sample which may not always be readily available.</p>
+
+<p style="text-align: justify;">The signal of the response produced now becomes the ratio of the analyte signal to the reference signal. **Figure 2** shows how the signals or data obtained can be used to evaluate the desired concentration of the unknown sample from the internal standard.</p>
+
+![**Figure 2.** Signal comparison of unknown
+sample versus internal standard)](Chapter4Media\Figure2.png "Signal comparison of unknown
+sample versus internal standard"){width="50%"}
+
+##### (B) Standard Addition
+<p style="text-align: justify;">Standard addition is another method where standard solutions of known concentration are added to the unknown solution before back-extrapolating to determine the original concentration. This way, *a known volume and concentration is spiked into the sample solution.*</p>
+
+<p style="text-align: justify;">Standard addition is useful in overcoming the matrix effect (which usually occurs in samples with multiple components, such as wastewater). However, this method is also more tedious than external calibration and assumes linearity in the negative x-axis.</p>
+
+![**Figure 3.** Sample graph used for back-extrapolation in standard addition](Chapter4Media\Figure3.png "Sample graph used for back-extrapolation in standard addition"){width="60%"}
+
+<p style="text-align: justify;">From **Figure 3**, a calibration curve can still be plot based on the known concentration and volume of the standard solution added to the sample. Back-extrapolation is done to determine the actual concentration in the sample.</p>
+
+:::{.callout-tip icon=false collapse="true"}
+
+## Mathematical Proof (for motivated and interested students)
+
+![](Chapter4Media\Figure4.png ""){width="80%"}
+
+where  
+
+- X = unknown concentration of analyte  
+- S = known concentration of standard  
+- *i* = initial (before addition of standard)  
+- *f* = final (after addition of standard)  
+
+:::
+
+## 4 | ELECTROCHEMISTRY
+
+<p style="text-align: justify;">Electrochemical reactions are derived from the interconversion between electrical energy and chemical potential energy that arises from redox reactions. A simple example can be found in rechargeable batteries (e.g. Li-ion batteries).</p>
+
+**Table 3.** Electrochemical reaction in rechargeable batteries
+![](Chapter4Media\Table3.png ""){width="100%"}
+
+#### 4.1 VOLTAGE
+
+<p style="text-align: justify;">Voltage (V) is the potential energy per unit charge and can be evaluated as the **potential difference between the electrodes**. If the potential difference between the cathode and the anode is **positive**, this means that the reaction will occur **spontaneously without the need for an external source of energy**. An example of this is in the **sacrificial protection of steel**, where more electrochemically active aluminium is attached to the hull of ships to delay the time taken for steel to corrode.</p>
+
+**Table 4.** Electrochemical reaction in the sacrificial protection of steel
+![](Chapter4Media\Table4.png ""){width="100%"}
+
+<p style="text-align: justify;">As a result, any iron corroded (oxidised) by seawater will have its oxidation “reversed” as the aluminium is “sacrificed” in the process.</p>
+
+#### 4.2 CURRENT
+
+<p style="text-align: justify;">When charging a battery, **how long should you charge it for?** When you switch on your electrical appliances, a **current is supplied**. Current (I, A) is the amount of charge (Q, C) moving per unit time (*t*, s). The amount of charge is also proportional to the amount of electrons (n$_e$, mol) exchanging in the redox system. The proportionality constant is also known as the Faraday constant (96485 C/mol).</p>
+
+\begin{equation}
+Q = It = n_eF
+\end{equation}
+
+> **Discussion corner**
+>
+> <p style="text-align: justify;">What is the mass of copper deposited when 0.7 A of current is supplied for 3 h for an electrochemical set-up with two copper electrodes immersed in 0.50 M H$_2$SO$_4$ ?</p>
+
+## 5 | DELIVERABLES
+
+<p style="text-align: justify;">In this second part of this theme, the basic science that you should have taken away is: </p>
+- Calibration methods and limitations of analytical methods
+- Basic electrochemistry and redox reactions
+
+<p style="text-align: justify;">The content in this handout will be sufficient to **plan** and **understand** what needs to be one for the second experiment on electrocoagulation.</p>
+
+#### Lab Worksheet
+
+<p style="text-align: justify;">You will find a copy of the lab worksheet in the Google Classroom. You are required to: </p>
+
+- Read the background and general procedure
+- Plan your experiment **with your group BEFORE your lab session** (discuss with mentor)
+- Submit a completed lab worksheet **BY THE END of your lab session**
+- Refer to lab worksheet for more detailed instructions
+
+## 6 | REFERENCES
+
+*Acknowledgements for **Figures** and **Data***
+
+- **Figure 1** (PUB, NEWater Technology) <a href =https://www.pub.gov.sg/watersupply/fournationaltaps/newater>here</a>
+- Data for **Table 1** <a href=https://www.shimadzu.com/an/sites/shimadzu.com.an/files/pim/pim_document_file/applications/application_note/13503/a354.pdf>here</a>
+
+## 7 | FURTHER READINGS
+
+<p style="text-align: justify;">You may look to these sources for inspiration regarding your individual presentation or to supplement your own learning.</p>
+
+- <a href=https://www.sciencedaily.com/releases/2022/06/220623153704.html >**Microplastic pollution and its effects**</a>
+- **What are the impacts of plastic pollution on the climate, oceans and biodiversity? Are current measures enough?** [Derek’s (Ong) Individual Presentation]
+- <a href = https://www.intechopen.com/chapters/62471>**Phosphorous Eutrophication**</a>
+- <a href = https://www.electrochem.org/the-science-of-how-lead-pipes-poison-your-water>**Lead Pipes**</a>
+- <a href = https://www.eurekalert.org/news-releases/932207>**Electrocoagulation**</a> (relevant to lab !)
