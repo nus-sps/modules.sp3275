@@ -1,0 +1,514 @@
+---
+title: 'Theme 2: How does life affect the planet’s temperature stability?'
+subtitle: Daisyworld
+author: 'Lead Author: Ng Jing Ting <br> Collaborator: Shao Nandi <br> Corresponding Author: Dr Linda Sellou'
+format:
+  html:
+    toc: true
+    toc-location: right
+    code-fold: true
+jupyter: python3
+---
+
+## 1 | OVERVIEW
+
+#### LEARNING OBJECTIVES
+<div style="text-align: justify;">
+- Able to understand the characteristics of black and white daisies
+- Able to interpret the outcomes of the Daisyworld model on the temperature of a planet and how it supports the Gaia hypothesis
+- Understand how factors (e.g. daisy growth rate, daisy local temperature, daisy coverage, available ground, planet albedo, planet temperature) affect the Daisyworld
+- Recognise the strengths of modelling to observe numerous interactions within a system and appreciate its applications in real life
+</div>
+
+#### PREAMBLE
+<p style='text-align: justify;'>
+In a simplistic Daisyworld model, we are only interested in black and white daisies, both of which have distinct impacts on the planet. The growth rate of daisies depends on the planet’s temperature, which in turn is modified by the daisies as they absorb differing amounts of solar radiation. As the daisies begin growing over time, the amount of available ground also decreases with time. We will discuss the single-colour model with solely white daisies and continue to cover the white-and-black daisy model via modelling practices.
+</p>
+
+#### RECOMMENDED READING
+<p style='text-align: justify;'>
+WATSON, A.J. and LOVELOCK, J.E. (1983), Biological homeostasis of the global environment: the
+parable of Daisyworld. Tellus B, 35B: 284-289. <https://doi.org/10.1111/j.1600-0889.1983.tb00031.x>
+</p>
+
+#### USEFUL VIDEOS
+- [Daisyworld : James Lovelock and Gaia (OpenLearn from the Open University)](https://www.youtube.com/watch?v=5yvQVD7sgn0)
+- [This World is Black and White (NASA Goddard)](https://www.youtube.com/watch?v=sCxIqgZA7ag)
+
+## 2 | FUNDAMENTAL CONCEPTS OF DAISYWORLD
+
+#### 2.1 SDG 11 : SUSTAINABLE CITIES AND COMMUNITIES
+<p style='text-align: justify;'>
+SDG 11 of the United National Sustainable Development Goals is to make cities and human settlements inclusive, safe, resilient, and sustainable [1]. Human settlements are highly complex, involving different interactions between nature and man. However, by breaking down these systems into fundamental parts, we can study these interactions and the effects of changing biological or physical variables.
+</p>
+
+<p style='text-align: justify;'>
+Starting with a simplified Daisyworld model, we will delve into the effects of different environmental factors on the daisy growth, before looking into extending the model to study other factors.
+</p>
+
+#### 2.2 THE DAISYWORLD FEEDBACK LOOP
+
+##### (A) Effect of the Daisies on the Planet’s Temperature
+<p style='text-align: justify;'>
+Just as how darker-coloured objects tend to absorb more heat and lighter-coloured objects reflect more wavelengths and thus absorb less heat, the same could be said about the colour of daisies in Daisyworld. Here, we will look at white and black daisies.
+</p>
+
+![**Figure 1.** Relationship between the white daisy coverage and the surface temperature of the planet.](.//Chapter2Media/Graph%20of%20planet%20temperature%20against%20white%20daisy%20coverage.png){width=500}
+
+::: panel-tabset
+
+### **Exercise 1**  
+
+With reference to **Figure 1**, answer the following questions.
+
+a) What is the effect of white and black daisies on the temperature of the planet ?
+b) What are the differences between the roles of the black and white daisies in the model ?
+c) What do daisies, temperature luminosity, albedo in the Daisyworld represent in the actual biosphere ?
+d) Why does the number of white daisies affect the surface temperature in a negative, linear relationship ?
+
+### **Model answer**
+
+<div style='text-align: justify;'>
+a) Compared to the same area of barren soil (e.g., 0.4), vegetation with white daisies corresponds to a higher albedo (e.g., 0.7) and thereby higher reflection rate of light and lesser retention of heat. Therefore, white daisies have an effect that decreases the temperature of the planet; vice versa for black daisies, they tend to increase the temperature of the planet with their lower albedo as lesser amount of solar energy is reflected  due to their low albedo (e.g., 0.2). 
+
+b) The two daisies have countering impacts on the temperature of the planet, if addressed in the same area of land. They represent different propensity of the planet’s temperature to change, as the equilibrium points of growth for the two daisies are not necessarily the same.  
+
+c) vegetations (daisies), temperature (climactic consequence), luminosity (activity of the Sun) and albedo (greenhouse effect or the albedo of Earth’s surface layers).
+
+d) This is only a representation of the relationship between white daisy coverage and temperature, which does not factor in the growth rate of daisies. Normally, a larger surface area is covered by white daisies; the closer the planet’s albedo leans towards that of the white daisy vegetation. Given the same solar flux-in, the more light will be reflected by daisies than barren ground ($albedo = {reflected \ light \over total \ light}$) and therefore the more daisies there are, the more the temperature will be negatively affected. The relationship being linear involves the grey body premise where $F_{in} = A + B \cdot T_p$ (A and B are coefficients that are empirically confirmed). 
+</div>
+
+:::
+
+##### (B) Effect of Temperature on the Daisy’s Coverage
+<p style='text-align: justify;'>
+As with how the colour of daisies affect the surface temperature, the temperature also affects Daisy
+growth. On the other hand, white daisies possess a parabolic growth curve to do with the planet temperature (**Figure 2**).
+</p>
+
+![**Figure 2.** Relationship between the surface temperature of the planet and the white daisy coverage.](.//Chapter2Media//Graph%20of%20white%20daisy%20coverage%20against%20planet%20temperature.png){width=500}
+
+>**Discussion Corner**
+>
+<p style='text-align: justify;'>
+>Create a **white daisyworld feedback loop** similar to the ice-albedo loop (Section 8.2 Feedback
+Loops in Understanding Earth’s Climate and EBMs). Include any necessary equations and variables.
+</p>
+
+#### 2.3 EQUILIBRIUM STATES IN THE DAISYWORLD
+
+##### 2.3.1 Mutual Responses due to Couplings in the Daisyworld
+<p style='text-align: justify;'>
+The surface temperature of the planet is dependent on the characteristics of daisies growing on the planet [2]. For example, white daisies reflect more incoming solar radiation back into the atmosphere. This reduces the amount of incoming solar radiation absorbed by the available ground, which in turn, reduces the surface temperature of the planet.
+</p>
+
+<p style='text-align: justify;'>
+The surface temperature response to daisy coverage in this negative coupling is implicitly implied by albedo, which reduces the capacity of the planet's surface to take up solar flux [2]. On the other hand, white daisies possess a parabolic growth curve to do with the local temperature. As such, the abundance of white daisies will become optimal when it is at the optimum temperature but decreases to zero when the temperature goes to the two extremities. Local temperature is the condition that caps the population size of white daisies.
+</p>
+
+<p style='text-align: justify;'>
+However, with increasing luminosity and thus increasing surface temperatures, white daisies are no longer able to grow as quickly as before, as temperatures are beyond optimum temperatures (**Figure 1**). Hence, there will be a decrease in white daisy coverage over time, after the optimum surface temperature.
+</p>
+
+<div style='text-align: justify;'>
+![**Figure 3.** Relationship between white daisy coverage and surface temperature. The linear relationship represents response of temperature to the change of daisy coverage, whilst the parabolic relationship represents response of the daisy coverage to the change in temperature.](Chapter2Media//ave_surface_temp.jpg){width=350}
+</div>
+
+<p style='text-align: justify;'>
+With the two coupling relationships overlaid, the intersection points of the plots of average surface temperature against daisy coverage and daisy coverage against average surface temperature (**Figure 1**) show the two possible equilibrium states. How the system will respond to perturbations will depend on the type of steady states the system is at.
+</p>
+
+![**Figure 4.** A visual representation of the types of steady states. (**A**) represents a stable steady state and (**B**) represents an unstable steady state.](Chapter2Media//stable_unstable_pic.jpg){width=400}
+
+<p style='text-align: justify;'>
+We can refer to the equilibrium state to be steady (**Figure 4(A)**), unsteady (**Figure 4(B)**), and neutral. In this section, we are interested in steady and unsteady states. These are defined below [3]:
+</p>
+
++-------------------:+:-------------------:+
+|Stable equilibrium  | When displaced from its equilibrium, a net force will be experienced by the object in the opposing direction (restoring force). |
++--------------------+---------------------+
+|Unstable equilibrium| When displaced from its equilibrium, a net force will be experienced by the object in the same direction. 
++--------------------+---------------------+
+
+::: panel-tabset
+
+### **Exercise 2**
+
+a) If you move / push the ball away from A what happens ? 
+
+b) If the same was done with B, what happens ? 
+
+c) Using this analogy, explain what a stable and unstable steady state / equilibrium is.
+
+### **Model answer**
+
+a) Restoration back to the equilibrium point (A). 
+
+b) Either dropping to A where the system will become stable, or falling down the slippery slope until it reaches the extremes. 
+
+c) *Share your answers in class*
+
+:::
+
+
+<div style='text-align: justify;'>
+>**Discussion Corner**
+>
+>Going back to **Figure 1**, how can you determine if an equilibrium point (intersection of the two plots) is stable or unstable ?
+</div>
+
+## 3 | HOW DOES THE PLANET'S TEMPERATURE CHANGE WITH BLACK OR WHITE DAISIES?
+<p style='text-align: justify;'>
+Now, we will move on to create a computer model based on Lovelock and Watson’s mathematical model. This will help to understand the evolution of life and the planet’s temperature. To begin, we will build a one-daisy model and look at white and black daisies separately.
+</p>
+
+![**Figure 5.** An overview of the modelling scenarios.](Chapter2Media//modelling_overview.jpg){width=500}
+
+##### 3.1 PLOTTING DAISY COVERAGE AGAINST TIME
+<p style='text-align: justify;'>
+Let us begin by first looking at how the daisy’s area changes with time. As we do not have a simple equation linking both variables, we will use the Euler’s method to determine a function of how the daisy’s area changes with time.
+</p>
+
+###### Euler's Method
+
+::: {.callout-note icon=false}
+## Recall
+Do you remember [***Numerical Solutions***](https://sps.nus.edu.sg/sp2273/numerical-solutions-need.html)?
+:::
+
+<p style='text-align: justify;'>
+Theoretically, differential equations may be solved by separation of variables. However, in more complex equations, this may prove to be challenging. Instead, an alternative way to solve differential equations is used, that is, Euler’s method.
+</p>
+
+<p style='text-align: justify;'>
+Euler’s method makes use of the idea of linear approximation, which involves the use of tangent lines at the point of the solution curve to approximate the solution to the initial value problem (values of the parameters when $t = 0$).
+</p>
+
+![**Figure 6.** An illustration of linear approximation used in Euler's method.](Chapter2Media//Euler_new.jpg){width=450}
+
+Euler’s method is used to solve differential equations of the form :
+
+$${dy \over dx} = f(t, y)$$
+
+with initial conditions:
+
+$$ t = t_0, y(t_0) = y_0$$
+$${ \left.\frac{dy}{dx}\right|_{t_0, y_0} } = f(t_0, y_0)$$
+
+If we take a point close to $t_0$ and call it $t_1$, we can rewrite the equation as
+
+$$ y_1 = y_0 + { \left.\frac{dy}{dx}\right|_{t_0, y_0} } (t_1 - t_0) = y_0 + f(t_0, y_0) \cdot \Delta t $$
+
+<p style='text-align: justify;'>
+By taking numerous values of t and substituting it into the equation, we can obtain a relationship between $y_n$ and $y_{n+1}$ and can then generalise the Euler’s method formula to be :
+</p>
+
+$$ y_{n+1} = y_n + f(t_n, y_n) \cdot \Delta t $$
+
+::: panel-tabset
+
+### **Exercise 3**
+
+(a) 
+<p style='text-align: justify;'>
+Create a white daisyworld feedback loop similar to the ice-albedo loop. Include any necessary equations and variables. 
+</p>
+
+(b)
+<p style='text-align: justify;'>
+The increment $\Delta A_w$ is approximated from $dA_w$ in the relevant differential equation. Express $\Delta A_w$ in terms of $dA_w$.
+</p>
+
+(c)
+<p style='text-align: justify;'>
+Given the initial value of the daisies ($A_{w0}=0.01$) can you calculate the value of the daisies after one timestep ($A_{w1}$)?
+</p>
+
+### Model answer
+
+a) *Discuss with your groupmates during the lecture.*
+
+b) $\Delta A_w \approx dA_w = A_w(\chi \beta_w -\gamma) * dt$
+
+c) You may attempt this by hand, but what's the point when you can use python!
+:::
+
+::: panel-tabset
+
+### **Exercise 4 [Let's Code!]**
+   
+a) 
+Create a loop that can help you generate the data ($A_{w1}, A_{w2}, A_{w_3}, ...$) for a specific number of timesteps, $\Delta t$ (you may start with 50 iterations).
+
+b)
+Plot the graph of daisy coverage ($A_w$) against time ($t$) for white daisies.
+
+c)
+Repeat (**a**) and (**b**) for black daisies.
+
+### **Model answer**
+
+It may be a good idea to make use of a flowchart to have a better idea of the algorithm for the code. We have created this for you:
+![](.//Images//one%20daisy%20flowchart.jpg){width=600 style="display: block; margin: 0 auto"}
+:::
+
+::: {.callout-tip collapse="true"}
+## Hint
+You may find that referring to the white daisy feedback loop may help with understanding how to update the variables.
+:::
+
+::: {.callout-note icon=false}
+## Recall
+Do you remember [***Loops***](https://sps.nus.edu.sg/sp2273/loops-need.html)?
+:::
+
+##### 3.2 HOW DOES THE PLANET TEMPERATURE CHANGE WITH TIME?
+
+<p style='text-align: justify;'>
+Now, we are interested in planet temperature. However, similar to daisy coverage, we do not have a direct simple equation that links the planet temperature with time. Identify the main equation in the paper that shows the change in temperature. 
+</p>
+
+::: panel-tabset
+
+### **Exercise 5**
+
+Looking at the equation, what variable(s) are changing with time ?
+
+### **Model answer**
+One possible variable is the available ground and albedo, which further affect all other variables in an interconnected way. 
+:::
+
+::: panel-tabset
+
+### **Exercise 6**
+a) Keeping the same initial conditions ($A_w$ = 0.01), calculate the planet temperature ($T_p$) at time $t_0$ and after one timestep.
+b) By making small changes to the code in Exercise 4, plot the planet temperature against time.
+
+### **Model answer**
+$T_p = 1 – {[0.01 + 0.01 \cdot (growth \ rate \cdot 0.99 – death \ rate) \cdot dt] + 0.99} \cdot {Insolation \ constant \over Stefan-Boltzmann \ constant} \cdot 1$
+:::
+
+<style>
+td, th {
+   border: none!important;
+   text-align: justify;
+}
+</style>
+
+:::{.callout-note appearance="simple" collapse="true" icon="false"}
+## Modelling Questions
++------:+:-------------------:+
+|**M1** | Vary the initial amount of white daisies ($A_{w0}$), can you reach a steady state for the planet temperature ($T_p$) without killing all the daisies ? If so, give the final steady state conditions ($T_p$ and $A_b$). Repeat with black daisies only.
++-------+---------------------+
+|**M2** |Keeping the same initial conditions ($A_w$ = 0.01), calculate the planet temperature ($T_p$) at time t0 and after one timestep.
++-------+---------------------+
+|**M3** | Now we will vary the sun luminosity but still look at the results for black and white daisies separately. If you increase $L$, how does the temperature change ? Give the range of luminosities when the temperature stable.
++-------+---------------------+
+:::
+
+## 4 | HOW DOES THE PLANET TEMPERATURE CHANGE WITH THE PRESENCE OF BOTH BLACK AND WHITE DAISIES?
+
+<p style='text-align: justify;'>
+We have completed the first steps of building our model ! Let us move on to observe the interactions of black and white daisies on a planet. We are now looking at a planet with white and black daisies growing together. Adapt your equations to take into account both daisies at the same time. 
+</p>
+
+::: panel-tabset
+
+### **Exercise 7 [Let's Code!]**
+
+Plot the daisy coverage of black ($A_b$) and white daisies ($A_w$) against time ($t$) on the same graph. On another graph, plot the planet temperature ($T_p$) against ($t$).
+
+### **Model answer**
+The flowchart below might give you a better idea of how to start coding. The code is built upon what you have written for the one-daisy model.
+![](.//Chapter2Media//two%20daisy%20flowchart.jpg){width=600 style="display: block; margin: 0 auto"}
+:::
+
+>**Discussion Corner**
+>
+>a) Compare the one-daisy plots (white and black) with the two-daisy plot for a fixed luminosity. How does the temperature of the planet vary ?
+>b) Do you get the same values of equilibrium for the area of the daisies and the temperature of the planet ? Explain.
+
+:::{.callout-note appearance="simple" collapse="true" icon="false"}
+## Modelling Questions
++------:+:-------------------:+
+|**M4** | Explain what happens if you change the albedo of the daisies to that of barren soil.
++-------+---------------------+
+|**M5** |What happens to the planet when you vary the parameter $q$ (refer to recommended paper about $q$) and with increasing $L$ (compare the situations when $q$ is minimum, maximum, and average). 
++-------+---------------------+
+|**M6** | Find the steady state values (daisy areas and planet temperature) and explain how the planet reaches steady state in the two situations below. <br /> (a) $A_w$ = 0.2, $A_b$ = 0.2, $L$ = 0.9 <br /> (b) $A_w$ = 0.2, $A_b$ = 0.2, $L$ = 1 |
++-------+---------------------+
+|**M7** | How do the two types of daisies co-exist and remain stable at a fixed $L$ ?
++-------+---------------------+
+:::
+
+## 5 | HOW DOES PLANET TEMPERATURE AND DAISY COVERAGE CHANGE WITH LUMINOSITY?
+
+Let's complete your code so that you can directly plot the steady state values $A_w$, $A_b$, and $T_p$ (in $\degree C$) for increasing luminosity ($L$).
+
+::: panel-tabset
+
+### **Exercise 8 [Let's Code!]**
+
+a)
+Increase $L$ from [0.5 to 1.6] and decreasing from [1.6 to 0.5]. Decide the best increment for $L$.
+
+b)
+Plot two graphs, $A_w$ and $A_b$ against $L$ (in the same graph) and $T_p$ against $L$.
+
+### **Model answer**
+<div style='text-align: justify;'>
+No flowchart is given this time, but try your best to produce one for yourself. Here are some hints:
+
+1. What variables are you storing when running the code chunk for a particular value for luminosity?
+2. How would you repeat the process for multiple values of luminosity?
+3. At each particular value of luminosity, what should be happening to the daisyworld? Should there be changes to the previous code?
+</div>
+
+Start with just one daisy first before attempting to model for two daisies.
+:::
+
+::: {.callout-tip collapse="true"}
+## Hint
+To complete your code, you need to create an outer loop with the luminosity changing with an increment. Remember that for each luminosity you are only interested in the steady state values (the only values you need to store). That means you should decide how many iterations (time) you need in your inner loop to reach equilibrium.
+:::
+
+::: {.callout-important}
+## Take note
+**Do not let the daisies die out completely!**
+Remember to set a threshold, else the daisies cannot grow again when $L$ is decreasing.
+:::
+
+:::{.callout-note appearance="simple" collapse="true" icon="false"}
+## Modelling Questions
++------:+:-------------------:+
+|**M8** | What do you notice about the planet temperature when the white daisies appear despite $L$ increasing ? Why does the black daisy domination only last for a short time vs that of the white daisies ?
++-------+---------------------+
+|**M9** | Explain the plot versus $L$ in terms of feedback mechanisms.
++-------+---------------------+
+|**M10**| There is one interesting phenomenon called hysteresis with the white daisy planet when the $L$ is decreasing (from 1.6 back to 0.8), see **Figure 1c.** of the recommended paper. By carefully observing the $T$ and associate white area, can you explain why this happens ?
++-------+---------------------+
+|**M11**| Give your conclusion about the effect of the daisies (vs one species and no daisy at all).
++-------+---------------------+
+|**M12**| From an Earth perspective, can you relate those conditions to the real world ?
++-------+---------------------+
+|**M13**| What external forcing could you add to your model, when $L$ is high, to help the remaining daisies to survive ? How would this change impact the environment ?
++-------+---------------------+
+:::
+
+## 6 | ALTERNATIVE METHOD TO VISUALISE EQUILIBRIA - THE STATE SPACE PICTURE
+<div style='text-align: justify;'>
+In this section, instead of looking how the area varies with time, we are looking at how  varies with area. Run the Python code [Daisyworld State Space Picture.ipynb] written by Park Kun Hee (SPS Batch 2015) available in the same Daisyworld Google Classroom post.
+
+##### 6.1 STEADY STATE SOLUTIONS AND STABILITY
+We first look at how we can find steady state solutions and their stabilities with this new picture.
+
+:::{.callout-note appearance="simple" collapse="true" icon="false"}
+## Modelling Questions
++------:+:-------------------:+
+|**M14**|What is the value of for steady state (equilibrium) solutions? Can you identify them in the plot?
++-------+---------------------+
+|**M15**| Are all steady states reachable from other positions? What does it say about their stabilities? What is the physical significance of the equilibrium solutions and their stabilities?
++-------+---------------------+
+|**M16**| Pick several different starting positions and trace how the points move in the state space. Where do they end up? Compare the results with those from the time-evolution plot.
++-------+---------------------+
+|**M17**| How do the time-evolution plot and state-space plot differ in the information they display?
++-------+---------------------+
+:::
+</div>
+
+##### 6.2 2-DIMENSIONAL GENERALISATION
+For the two-daisy case, the state of the system is totally characterised by two variables, 
+$$ A_b \in [0,1] \ and \ A_w \in [0,1], \ constrained \ by \ A_b + A_w \le 1$$
+
+Therefore, the state space, where all possible states reside, is a region in two-dimensional space bounded by a triangle, whose vertices are at (0,0), (0,1) and (1,0). 
+
+Just like the one-daisy case, a state of the system is represented by a point in the triangular region, and its time evolution is represented by a continuous slide across the region. However, unlike the one-daisy case, there are now two different rates of change of area that direct how to evolve the system, namely,
+
+- tells us where to go in the $A_b$-direction (taken to be the horizontal axis)
+- tells us where to go in the $A_w$-direction (taken to be the vertical axis)
+
+We may therefore define a vector $v$ that consists of two components: magnitude of  in the $A_b$-direction, and magnitude of in the $A_w$-direction.
+
+:::{.callout-note appearance="simple" collapse="true" icon="false"}
+## Modelling Questions
++------:+:-------------------:+
+|**M18**| What do $v_b$ and $v_w$ represent ?
++-------+---------------------+
+|**M19**| What is the difference between the previous plot (with one daisy) and this 2D plot (stream plot)?
++-------+---------------------+
+|**M20**| Pick several different starting positions and trace how the points move in the state space. Where do they end up? Compare the results with those from the time-evolution plot.
++-------+---------------------+
+|**M21**| What is the value of v for steady state (equilibrium) solutions? Can you identify them in the plot?
++-------+---------------------+
+|**M22**| Are all steady states reachable from other positions? What does it say about their stabilities?
++-------+---------------------+
+|**M23**| What is the physical significance of the equilibrium solutions and their stabilities?
++-------+---------------------+
+|**M24**| How do time-evolution plots and state-space plots compare in terms of the information they display?
++-------+---------------------+
+:::
+
+##### 6.3 BIFURCATION
+The bifurcation plot shows how steady states change with respect to a parameter. In this example, we will choose the parameter to be luminosity $L$, you may try other parameters as well.
+
+:::{.callout-note appearance="simple" collapse="true" icon="false"}
+## Modelling Questions
++------:+:-------------------:+
+|**M25**| Can you observe the hysteresis loops? What can you learn from this plot?|
++-------+---------------------+
+:::
+
+## 7 | DELIVERABLES
+
+<div style='text-align: justify;'>
+Preparatory work: Students are to complete the assigned work before their lecture and IS sessions to ensure for a smooth and fruitful discussion session with their groupmates and mentors.
+
+![](.//Chapter2Media//SP3275%20Deliverables%20table%20.jpg){width=600 style="display: block; margin: 0 auto"}
+</div>
+
+## 8 | REFERENCES
+
+<div style='text-align: justify;'>
+
+[1] Conserve and sustainably use the oceans, seas and marine resources for sustainable development [Internet]. United Nations, 2022. Available from: [https://sdgs.un.org/goals/goal14](https://sdgs.un.org/goals/goal14)
+
+[2] Kump LR, Kasting JF, and Crane RG. The earth system. Upper Saddle River, NJ: Pearson Prentice Hall, 2011.
+
+[3] College Physics. UH Pressbooks; Chapter 9.3 Stability. Available from: [http://pressbooks-dev.oer.hawaii.edu/collegephysics/chapter/9-3-stability/#:~:text=There%20are%20three%20types%20of,this%20module%20illustrate%20various%20examples](http://pressbooks-dev.oer.hawaii.edu/collegephysics/chapter/9-3-stability/#:~:text=There%20are%20three%20types%20of,this%20module%20illustrate%20various%20examples)
+</div>
+
+## APPENDIX
+##### Constants
+
++--------------------------:+:-------------------------:+
+|Insolation constant        | $S_0 = 917 W \cdot m^{-2}$|
++---------------------------+---------------------------+
+| Luminosity multiplier     | $[0.4, -1.7]$             |
++---------------------------+---------------------------+
+| Insulation                | $R = 0.2$                 |
++---------------------------+---------------------------+
+| Death rate                | $\gamma = 0.3$            |
++---------------------------+---------------------------+
+| Stefan-Boltzmann constant | $\sigma = 5.670367 \times 10 ^{-8} W \cdot m^{-2} \cdot K^{-4}$  
++---------------------------+---------------------------+
+| Albedo values             | $\alpha_b = 0.25, \alpha_w = 0.75, \alpha_g = 0.5$         
++---------------------------+---------------------------+
+| Temperature               | $T_{opt} = 22.5 \degree C, T_{min} = 5 \degree C, T_{max} = 40 \degree C$ |
++---------------------------+---------------------------+
+
+##### Equations
+
++-------------------------------:+:-------------------------:+
+| Daisy's growth, $\beta_i$      | $\beta_i = 1 - 0.003265 \times (22.5 - T_i)^2$ 
++--------------------------------+---------------------------+
+|Daisy's local temperature, $T_i$| $T_i^4 = RL \times {S_0 \over \sigma} \times (\alpha_p - \alpha_i) + T_e^4$ |
++--------------------------------+---------------------------+
+| Daisy's coverage, $A_i$        | ${dA_i \over dt} = A_i(x\beta_i - \gamma)$ 
++--------------------------------+---------------------------+
+| Available ground, $x$          | $x = A_g = 1 - A_w - A_b$ |
++--------------------------------+---------------------------+
+| Planet's albedo, $\alpha_p$    | $\alpha_p = A_w\alpha_w + A_b\alpha_b + A_g\alpha_g$
++--------------------------------+---------------------------+
+| Planet's temperature, $T_p$    | $T_e^4 = L \times {S_0 \over \sigma}(1 - \alpha_p)$
++--------------------------------+---------------------------+
+
