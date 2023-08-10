@@ -4,7 +4,7 @@ project:
   type: website
   output-dir: docs
 
-title: "Theme 1: How does Earth's atmosphere influence its climate?"
+title: "Theme 1: What affects Earth's climate?"
 subtitle: "Understanding Earth's Climate and Energy Balance Models (EBMs)"
 author: "Lead authors: Derek Yuen, Jace Han <br> Corresponding author: Dr. Linda Sellou"
 
@@ -427,7 +427,7 @@ The objectives are:
 1. Generate the temperature data for a range of solar radiation (*luminosity*).
 2. Plot the graph T (*temperature*) against M (*solar multiplier*)
 
-![**Figure 14:** Ice-albedo model illustration when solar luminosity is decreasing.](Chapter1Media\Icealbedo.gif){fig-align="center" width="100%"} 
+![**Figure 14:** Ice-albedo model illustration when solar luminosity is decreasing.](Chapter1Media\IceAlbedo.gif){fig-align="center" width="100%"} 
 
 #### 8.2 MODEL SET-UP
 ##### (A) Energy gain
