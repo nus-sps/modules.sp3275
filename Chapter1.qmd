@@ -160,7 +160,7 @@ $$S_0 * \pi r_p^2 * (1 - \alpha) = \sigma T_p^4 * 4 \pi r_p^2$$
 $$T_{p} = \sqrt[4]{\frac{S_0(1-\alpha)}{4\sigma}}$$
 :::
 
-:::{.callout-caution icon=false collapse="true"}
+:::{.callout-note icon=false collapse="true"}
 ## Modelling Questions 
 
 **M1.** Write code to calculate the flux received on a planet ($S_0$) given the following parameters: <br /> **1.** Temperature of the star (Sun), $T_s$ = $5780$ K <br /> **2.** Radius of the star (Sun), $r_s$ = $6.96 * 10^8 m$ <br /> **3.** Distance of the planet (Earth) from the star (Sun), $R_p$ = 1 AU <br /><br /> **Hint:** Use Stefan-Boltzmann Law (2) and the Inverse square law (3).
@@ -246,7 +246,7 @@ $$T = \sqrt[4]{\frac{S_0 * (1-\alpha)*(1+\tau_s)}{4\sigma(1+\tau_g)}}$$
 
 :::
 
-:::{.callout-caution icon=false collapse="true"}
+:::{.callout-note icon=false collapse="true"}
 ## Modelling Questions
 
 **M4.** Construct a code and calculate the effective temperature of Earth with a simulated atmosphere of $\tau_s$ = 0.8 and $\tau_g$ = 0.1.
@@ -296,7 +296,7 @@ You can find in **Table 4**, different values reported in literature.
 
 ![](Chapter1Media\Table4.png){fig-align="center" width="70%"}
 
-:::{.callout-caution icon=false collapse="true"}
+:::{.callout-note icon=false collapse="true"}
 ## Modelling Questions
 
 **M5.** Recalling what the linearisation constants (A and B) stand for, translate the equations into code and calculate the temperature of Earth using the constants from McGuffie (2005).
@@ -321,7 +321,7 @@ C * \frac{dT}{dt} = E_{gain} - E_{loss}
 
 The rate of heat flow ($\frac{dT}{dt}$) is proportional to the difference between the energy gained and energy loss by Earth.
 
-:::{.callout-caution icon=false collapse="true"}
+:::{.callout-note icon=false collapse="true"}
 ## Modelling Questions
 
 Let's construct a code for a temperature evolution model that simulates how Earth's temperature slowly equilibrates over time.
@@ -497,7 +497,7 @@ The solar constant is $S_0 * M$ with $M$ ranging from 0.6 to 1.4.
 
 <p style='text-align: justify;'>You will assume that it is the same initial temperature ($T_i$ = 255K) at each latitude band (with $M$ = 0.6). Therefore, all local albedos at the initial stage is equivalent to 0.6 (Earth is covered in ice).</p>
 
-:::{.callout-caution icon=false collapse="true"}
+:::{.callout-note icon=false collapse="true"}
 ## Modelling Questions
 
 Let's construct a code to understand the ice-albedo model.
