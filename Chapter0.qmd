@@ -181,7 +181,7 @@ format:
 
 ### Guiding Hints:
 
-<p style='text-align: center;'><img src="/Chapter_0_Media/Simulation_Loop.png" width=600/></p>
+<p style='text-align: center;'><img src="Chapter_0_Media/Simulation_Loop.png" width=600/></p>
 
 1. <p style='text-align: justify;'>Make a variable for the 1 litre volume of water in the bucket</p>
 
@@ -338,7 +338,7 @@ col_sums=[sum(j) for j in NewMat]
 
 Using the image shown:
 
-<p style='text-align: center;'><img src="/Chapter_0_Media/Belousov-Zhabotinsky.jpeg" width=400/></p>
+<p style='text-align: center;'><img src="Chapter_0_Media/Belousov-Zhabotinsky.jpeg" width=400/></p>
 
 1. <p style='text-align: justify;'>Present the original image but with all the blue intensities equal to 0. Do the same for the other colours.</p>
 
@@ -478,7 +478,7 @@ Using the image shown:
 ### Sub-Task 2
 #### Simulating Infection
 
-<p style='text-align: center;'><img src="/Chapter_0_Media/Exercise_6_Infection.png" width=650/></p>
+<p style='text-align: center;'><img src="Chapter_0_Media/Exercise_6_Infection.png" width=650/></p>
 
 1. <p style='text-align: justify;'>Create a variable to hold the data for all the newly infected individuals of the day. This should account for all 3 possible categories of sick people.</p>
 
@@ -754,7 +754,7 @@ for i in range(10):
 
 <p style='text-align: justify;'>As you can guess, higher powers of Bezier curves are essentially made from strategic points chosen from many lower power Bezier curves. Consider referring to this [exposé on Bezier curves](https://youtu.be/aVwxzDHniEw?t=116) for more clarity on what a Bezier curve is. You are advised to intepret this problem as coding out De Casteljau's algorithm from scratch (simple numpy and matplotlib.pyplot functions are allowed).</p>
 
-<p style='text-align: center;'><img src="/Chapter_0_Media/bezier_example.png" width=800/></p>
+<p style='text-align: center;'><img src="Chapter_0_Media/bezier_example.png" width=800/></p>
 
 ### A Possible Solution
 ```python
