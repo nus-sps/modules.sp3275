@@ -60,9 +60,9 @@ format:
 ```
 <p style='text-align: justify;'>Besides pre-existing functions, you can make your own functions, if you find yourself doing the same thing over and over again and would like some personalised "shortcuts":</p>
 ```python
-    def makingfunction(argument1,arguemnt2):  #creates the function with a name and expected inputs
+    def makingfunction(argument1,argument2):  #creates the function with a name and expected inputs
         #code that you wish to call can be written here. All variables made here are temporary, and disappears once the function "ends"
-        tempvariable = (arguemnt1 + argument2)/(argument1 * argument2)
+        tempvariable = (argument1 + argument2)/(argument1 * argument2)
         output = tempvariable**2
         return output    #ends the function, and can generate a function output to the "outside world"
 ```
