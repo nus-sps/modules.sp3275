@@ -461,22 +461,6 @@ With A (<span class="math inline">\(W m^{-2}\)</span>) and B (<span class="math 
 <p><img src="Chapter1Media\Table4.png" class="img-fluid figure-img" style="width:70.0%"></p>
 </figure>
 </div>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Modelling Questions
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p><strong>M5.</strong> Recalling what the linearisation constants (A and B) stand for, translate the equations into code and calculate the temperature of Earth using the constants from McGuffie (2005).</p>
-</div>
-</div>
-</div>
 </section>
 <section id="temperature-evolution-model-1" class="level4">
 <h4 class="anchored" data-anchor-id="temperature-evolution-model-1">6.3 TEMPERATURE EVOLUTION MODEL</h4>
@@ -494,7 +478,7 @@ C * \frac{dT}{dt} = E_{gain} - E_{loss}
 \end{equation}\]</span></p>
 <p>The rate of heat flow (<span class="math inline">\(\frac{dT}{dt}\)</span>) is proportional to the difference between the energy gained and energy loss by Earth.</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -503,8 +487,10 @@ Modelling Questions
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
+<p><strong>M5.</strong> Recalling what the linearisation constants (A and B) stand for, translate the equations into code and calculate the temperature of Earth using the constants from McGuffie (2005).</p>
+<hr>
 <p>Let’s construct a code for a temperature evolution model that simulates how Earth’s temperature slowly equilibrates over time.</p>
 <p><strong>M6.</strong> Calculate Earth’s Heat Capacity (<span class="math inline">\(C\)</span>) based on Earth’s water content. Given:<br>
 <br> Depth of water: <span class="math inline">\(70\)</span> m <br> Density of water: <span class="math inline">\(1.025 * 10^6\)</span> g/m<span class="math inline">\(^3\)</span> <br> Heat capacity of water: <span class="math inline">\(4.186\)</span> J/g<span class="math inline">\(*\)</span>K <br> Ocean coverage: <span class="math inline">\(0.7\)</span></p>
@@ -512,7 +498,7 @@ Modelling Questions
 <p><strong>M7.</strong> Calculate Earth’s average <span class="math inline">\(E_{gain}\)</span> (Energy gain in Watts/m<span class="math inline">\(^2\)</span>). Given:<br>
 <br> <span class="math inline">\(S_0\)</span>: 1370 Watts/m<span class="math inline">\(^2\)</span> <br> Albedo: 0.32</p>
 <hr>
-<p><strong>M8.</strong> Based on the final equation from <strong>5.3</strong>, use the Euler method to simulate Earth’s temperature slowly equilibrating over time from a given initial temperature. After each iteration, store the temperature (<strong>T</strong>) and the time (<strong>t</strong>) in a list to be plotted at the end.</p>
+<p><strong>M8.</strong> Based on the final equation from <strong>6.3</strong>, use the Euler method to simulate Earth’s temperature slowly equilibrating over time from a given initial temperature. After each iteration, store the temperature (<strong>T</strong>) and the time (<strong>t</strong>) in a list to be plotted at the end. Use the McGuffie A and B greybody constants.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Chapter1Media\Plot1.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
@@ -702,7 +688,7 @@ To find the equilibrium average planet temperature (<span class="math inline">\(
 You will assume that it is the same initial temperature (<span class="math inline">\(T_i\)</span> = 255K) at each latitude band (with <span class="math inline">\(M\)</span> = 0.6). Therefore, all local albedos at the initial stage is equivalent to 0.6 (Earth is covered in ice).
 </p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -711,7 +697,7 @@ Modelling Questions
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Let’s construct a code to understand the ice-albedo model.</p>
 <p>You are given two arrays containing the area of each band and its local solar flux:</p>

@@ -296,12 +296,6 @@ You can find in **Table 4**, different values reported in literature.
 
 ![](Chapter1Media\Table4.png){fig-align="center" width="70%"}
 
-:::{.callout-note icon=false collapse="true"}
-## Modelling Questions
-
-**M5.** Recalling what the linearisation constants (A and B) stand for, translate the equations into code and calculate the temperature of Earth using the constants from McGuffie (2005).
-:::
-
 #### 6.3 TEMPERATURE EVOLUTION MODEL
 <p style='text-align: justify;'>In this model, we are interested to find the change of temperature with time and find the equilibrium temperature of the planet as it reaches radiative equilibrium. We will be modelling Earth's emission as written in *5.2* using the values for a greybody. Thus, the equations for Earth's average energy gain ($E_{gain}$) and energy loss ($E_{loss}$) for this model would be:</p>
 
@@ -324,6 +318,10 @@ The rate of heat flow ($\frac{dT}{dt}$) is proportional to the difference betwee
 :::{.callout-note icon=false collapse="true"}
 ## Modelling Questions
 
+**M5.** Recalling what the linearisation constants (A and B) stand for, translate the equations into code and calculate the temperature of Earth using the constants from McGuffie (2005).
+
+---
+
 Let's construct a code for a temperature evolution model that simulates how Earth's temperature slowly equilibrates over time.
 
 
@@ -341,7 +339,7 @@ Let's construct a code for a temperature evolution model that simulates how Eart
 
 ---
 
-**M8.** Based on the final equation from **5.3**, use the Euler method to simulate Earth's temperature slowly equilibrating over time from a given initial temperature. After each iteration, store the temperature (**T**) and the time (**t**) in a list to be plotted at the end. 
+**M8.** Based on the final equation from **6.3**, use the Euler method to simulate Earth's temperature slowly equilibrating over time from a given initial temperature. After each iteration, store the temperature (**T**) and the time (**t**) in a list to be plotted at the end. Use the McGuffie A and B greybody constants.
 
 ![](Chapter1Media\Plot1.jpg){fig-align="center" width="80%"}
 
