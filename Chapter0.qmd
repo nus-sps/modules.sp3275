@@ -361,7 +361,7 @@ Using the image shown:
 ```python
   import matplotlib.pyplot as plt
   import numpy as np
-  pic = plt.imread("/Users/xinguan/Belousov-Zhabotinsky.jpeg")
+  pic = plt.imread("Belousov-Zhabotinsky.jpeg")
   
   # Task 1
   def nocolour(colour,pic):
