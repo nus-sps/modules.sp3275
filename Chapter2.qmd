@@ -1,7 +1,7 @@
 ---
 title: 'Theme 2: How does life affect the planet’s temperature stability?'
 subtitle: Daisyworld
-author: 'Lead Author: Ng Jing Ting <br> Collaborator: Shao Nandi <br> Corresponding Author: Dr Linda Sellou'
+author: 'Lead Author: Ng Jing Ting and Shao Nandi <br> Collaborators: Channe Chwa and Guan Xin <br> Corresponding Author: Dr Linda Sellou'
 format:
   html:
     toc: true
@@ -28,7 +28,7 @@ In a simplistic Daisyworld model, we are only interested in black and white dais
 #### RECOMMENDED READING
 <p style='text-align: justify;'>
 WATSON, A.J. and LOVELOCK, J.E. (1983), Biological homeostasis of the global environment: the
-parable of Daisyworld. Tellus B, 35B: 284-289. <https://doi.org/10.1111/j.1600-0889.1983.tb00031.x>
+parable of Daisyworld. Tellus B, 35B: 284-289. <https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1600-0889.1983.tb00031.x>
 </p>
 
 #### USEFUL VIDEOS
@@ -83,7 +83,7 @@ d) This is only a representation of the relationship between white daisy coverag
 ##### (B) Effect of Temperature on the Daisy’s Coverage
 <p style='text-align: justify;'>
 As with how the colour of daisies affect the surface temperature, the temperature also affects Daisy
-growth. On the other hand, white daisies possess a parabolic growth curve to do with the planet temperature (**Figure 2**).
+growth. In this case, white daisies possess a parabolic growth curve in relation to the planet temperature (**Figure 2**).
 </p>
 
 ![**Figure 2.** Relationship between the surface temperature of the planet and the white daisy coverage.](.//Chapter2Media//Graph%20of%20white%20daisy%20coverage%20against%20planet%20temperature.png){width=500}
@@ -91,8 +91,7 @@ growth. On the other hand, white daisies possess a parabolic growth curve to do 
 >**Discussion Corner**
 >
 <p style='text-align: justify;'>
->Create a **white daisyworld feedback loop** similar to the ice-albedo loop (Section 8.2 Feedback
-Loops in Understanding Earth’s Climate and EBMs). Include any necessary equations and variables.
+>Create a **white daisyworld feedback loop**, illustrating how white daisy coverage is affected by different environmental variables. Include any necessary equations and variables.
 </p>
 
 #### 2.3 EQUILIBRIUM STATES IN THE DAISYWORLD
@@ -107,7 +106,7 @@ The surface temperature response to daisy coverage in this negative coupling is 
 </p>
 
 <p style='text-align: justify;'>
-However, with increasing luminosity and thus increasing surface temperatures, white daisies are no longer able to grow as quickly as before, as temperatures are beyond optimum temperatures (**Figure 1**). Hence, there will be a decrease in white daisy coverage over time, after the optimum surface temperature.
+However, with increasing luminosity and thus increasing surface temperatures, white daisies are no longer able to grow as quickly as before, as temperatures are beyond optimum temperatures (**Figure 3**). Hence, there will be a decrease in white daisy coverage over time, after the optimum surface temperature.
 </p>
 
 <div style='text-align: justify;'>
@@ -115,7 +114,7 @@ However, with increasing luminosity and thus increasing surface temperatures, wh
 </div>
 
 <p style='text-align: justify;'>
-With the two coupling relationships overlaid, the intersection points of the plots of average surface temperature against daisy coverage and daisy coverage against average surface temperature (**Figure 1**) show the two possible equilibrium states. How the system will respond to perturbations will depend on the type of steady states the system is at.
+With the two coupling relationships overlaid, the intersection points of the plots of average surface temperature against daisy coverage and daisy coverage against average surface temperature (**Figure 3**) show the two possible equilibrium states. How the system will respond to perturbations will depend on the type of steady states the system is at.
 </p>
 
 ![**Figure 4.** A visual representation of the types of steady states. (**A**) represents a stable steady state and (**B**) represents an unstable steady state.](Chapter2Media//stable_unstable_pic.jpg){width=400}
@@ -209,28 +208,21 @@ $$ y_{n+1} = y_n + f(t_n, y_n) \cdot \Delta t $$
 
 ### **Exercise 3**
 
-(a) 
-<p style='text-align: justify;'>
-Create a white daisyworld feedback loop similar to the ice-albedo loop. Include any necessary equations and variables. 
-</p>
-
-(b)
+(a)
 <p style='text-align: justify;'>
 The increment $\Delta A_w$ is approximated from $dA_w$ in the relevant differential equation. Express $\Delta A_w$ in terms of $dA_w$.
 </p>
 
-(c)
+(b)
 <p style='text-align: justify;'>
 Given the initial value of the daisies ($A_{w0}=0.01$) can you calculate the value of the daisies after one timestep ($A_{w1}$)?
 </p>
 
 ### Model answer
 
-a) *Discuss with your groupmates during the lecture.*
+a) $\Delta A_w \approx dA_w = A_w(\chi \beta_w -\gamma) * dt$
 
-b) $\Delta A_w \approx dA_w = A_w(\chi \beta_w -\gamma) * dt$
-
-c) You may attempt this by hand, but what's the point when you can use python!
+b) You may attempt this by hand, but what's the point when you can use python!
 :::
 
 ::: panel-tabset
@@ -249,7 +241,7 @@ Repeat (**a**) and (**b**) for black daisies.
 ### **Model answer**
 
 It may be a good idea to make use of a flowchart to have a better idea of the algorithm for the code. We have created this for you:
-![](.//Images//one%20daisy%20flowchart.jpg){width=600 style="display: block; margin: 0 auto"}
+![](.//Chapter2Media/one%20daisy%20flowchart.jpg){width=600 style="display: block; margin: 0 auto"}
 :::
 
 ::: {.callout-tip collapse="true"}
@@ -275,17 +267,14 @@ Now, we are interested in planet temperature. However, similar to daisy coverage
 Looking at the equation, what variable(s) are changing with time ?
 
 ### **Model answer**
-One possible variable is the available ground and albedo, which further affect all other variables in an interconnected way. 
+Albedo of the planet.
 :::
 
 ::: panel-tabset
 
-### **Exercise 6**
-a) Keeping the same initial conditions ($A_w$ = 0.01), calculate the planet temperature ($T_p$) at time $t_0$ and after one timestep.
-b) By making small changes to the code in Exercise 4, plot the planet temperature against time.
+### **Exercise 6 [Let's Code!]**
 
-### **Model answer**
-$T_p = 1 – {[0.01 + 0.01 \cdot (growth \ rate \cdot 0.99 – death \ rate) \cdot dt] + 0.99} \cdot {Insolation \ constant \over Stefan-Boltzmann \ constant} \cdot 1$
+By making small changes to the code in Exercise 4, plot the planet temperature against time.
 :::
 
 <style>
@@ -405,7 +394,7 @@ We first look at how we can find steady state solutions and their stabilities wi
 :::{.callout-note appearance="simple" collapse="true" icon="false"}
 ## Modelling Questions
 +------:+:-------------------:+
-|**M14**|What is the value of for steady state (equilibrium) solutions? Can you identify them in the plot?
+|**M14**|What is the value of the steady state (equilibrium) solutions? Can you identify them in the plot?
 +-------+---------------------+
 |**M15**| Are all steady states reachable from other positions? What does it say about their stabilities? What is the physical significance of the equilibrium solutions and their stabilities?
 +-------+---------------------+
@@ -483,7 +472,7 @@ Preparatory work: Students are to complete the assigned work before their lectur
 +--------------------------:+:-------------------------:+
 |Insolation constant        | $S_0 = 917 W \cdot m^{-2}$|
 +---------------------------+---------------------------+
-| Luminosity multiplier     | $[0.4, -1.7]$             |
+| Luminosity multiplier     | $ L = [0.4, 1.7]$        |
 +---------------------------+---------------------------+
 | Insulation                | $R = 0.2$                 |
 +---------------------------+---------------------------+
@@ -501,7 +490,7 @@ Preparatory work: Students are to complete the assigned work before their lectur
 +-------------------------------:+:-------------------------:+
 | Daisy's growth, $\beta_i$      | $\beta_i = 1 - 0.003265 \times (22.5 - T_i)^2$ 
 +--------------------------------+---------------------------+
-|Daisy's local temperature, $T_i$| $T_i^4 = RL \times {S_0 \over \sigma} \times (\alpha_p - \alpha_i) + T_e^4$ |
+|Daisy's local temperature, $T_i$| $T_i^4 = RL \times {S_0 \over \sigma} \times (\alpha_p - \alpha_i) + T_p^4$ |
 +--------------------------------+---------------------------+
 | Daisy's coverage, $A_i$        | ${dA_i \over dt} = A_i(x\beta_i - \gamma)$ 
 +--------------------------------+---------------------------+
@@ -509,6 +498,6 @@ Preparatory work: Students are to complete the assigned work before their lectur
 +--------------------------------+---------------------------+
 | Planet's albedo, $\alpha_p$    | $\alpha_p = A_w\alpha_w + A_b\alpha_b + A_g\alpha_g$
 +--------------------------------+---------------------------+
-| Planet's temperature, $T_p$    | $T_e^4 = L \times {S_0 \over \sigma}(1 - \alpha_p)$
+| Planet's temperature, $T_p$    | $T_p^4 = L \times {S_0 \over \sigma}(1 - \alpha_p)$
 +--------------------------------+---------------------------+
 
