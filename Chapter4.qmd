@@ -136,7 +136,7 @@ Q = It = n_eF
 - Calibration methods and limitations of analytical methods
 - Basic electrochemistry and redox reactions
 
-<p style="text-align: justify;">The content in this handout will be sufficient to **plan** and **understand** what needs to be one for the second experiment on electrocoagulation.</p>
+<p style="text-align: justify;">The content in this handout will be sufficient to **plan** and **understand** what needs to be done for this experiment on electrocoagulation.</p>
 
 #### Lab Worksheet
 
@@ -144,7 +144,7 @@ Q = It = n_eF
 
 - Read the background and general procedure
 - Plan your experiment **with your group BEFORE your lab session** (discuss with mentor)
-- Submit a completed lab worksheet **BY THE END of your lab session**
+- Submit a completed lab worksheet **WITHIN ONE WEEK AFTER your lab session**
 - Refer to lab worksheet for more detailed instructions
 
 ## 6 | REFERENCES
