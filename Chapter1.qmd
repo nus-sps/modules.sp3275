@@ -241,8 +241,9 @@ From the previous simplified equation in **Exercise 3**, derive the equation to 
 ### **Model Answer**  
 
 $$F_g = F_s\frac{(1+\tau_s)}{(1+\tau_g)}$$
-$$\sigma T^4 * 4\pi R^2 = \frac{S_0 * \pi R^2 * (1-\alpha)*(1+\tau_s)}{(1+\tau_g)}$$
+$$\sigma T^4 =  \frac{S_0 * (1-\alpha) *\pi R^2}{ 4\pi R^2} * \frac{(1+\tau_s)}{(1+\tau_g)}$$
 $$T = \sqrt[4]{\frac{S_0 * (1-\alpha)*(1+\tau_s)}{4\sigma(1+\tau_g)}}$$
+With regards to the second step, $F_s$ is the solar flux received across Earth's entire surface area. Hence, we can multiply the solar constant by the cross-sectional area of the planet to get the total amount of solar radiation received on Earth, and divide it by the entire surface area of the planet, giving us $F_s$.
 
 :::
 
