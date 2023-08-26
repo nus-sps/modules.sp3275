@@ -243,7 +243,7 @@ From the previous simplified equation in **Exercise 3**, derive the equation to 
 $$F_g = F_s\frac{(1+\tau_s)}{(1+\tau_g)}$$
 $$\sigma T^4 =  \frac{S_0 * (1-\alpha) *\pi R^2}{ 4\pi R^2} * \frac{(1+\tau_s)}{(1+\tau_g)}$$
 $$T = \sqrt[4]{\frac{S_0 * (1-\alpha)*(1+\tau_s)}{4\sigma(1+\tau_g)}}$$
-With regards to the second step, $F_s$ is the solar flux received across Earth's entire surface area. Hence, we can multiply the solar constant by the cross-sectional area of the planet to get the total amount of solar radiation received on Earth, and divide it by the entire surface area of the planet, giving us $F_s$.
+With regards to the second step, $F_s$ is the average solar flux received across Earth's entire surface area. Hence, we can multiply the solar constant by the cross-sectional area of the planet to get the total amount of solar radiation received on Earth, and divide it by the entire surface area of the planet, giving us $F_s$.
 
 :::
 
@@ -462,7 +462,7 @@ T_{avg} = \sum(area_i * T_i)
 F_{loss} = A + B * T_i + G * (T_i - T_{avg})
 \end{equation}
 
-G represents heat transfer coefficient. $F_{loss}$ at each latitude band is then calculated.
+$G$ represents heat transfer coefficient. $F_{loss}$ at each latitude band is then calculated.
 
 #### 8.3 LOCAL AND AVERAGE ALBEDO
 <p style='text-align: justify;'>Let's now find the local albedo ($\alpha_i$). At each latitude band, the albedo is fixed at 0.3 (current Earth's albedo) when the temperature is $\ge -10^\circ$C (critical T), otherwise it is 0.6 (ice albedo). The same way as the temperature, the average albedo of the planet is the sum of the area-weighted albedos.</p>
@@ -494,7 +494,9 @@ T_i = \frac{F_{gain} - A + G * T_{avg}}{(B+G)}
 #### 8.5 INITIAL CONDITIONS
 The solar constant is $S_0 * M$ with $M$ ranging from 0.6 to 1.4.
 
-<p style='text-align: justify;'>You will assume that it is the same initial temperature ($T_i$ = 255K) at each latitude band (with $M$ = 0.6). Therefore, all local albedos at the initial stage is equivalent to 0.6 (Earth is covered in ice).</p>
+<p style='text-align: justify;'>You will assume that it is the same initial temperature ($T_i$ = 203K) at each latitude band (with $M$ = 0.6). Therefore, all local albedos at the initial stage is equivalent to 0.6 (Earth is covered in ice).</p>
+
+In this model, you are tasked to model Earth's temperature by changing $M$ to simulate when solar radiation received increases (0.6 to 1.4) or decreases (1.4 to 0.6). Do note that following incremental changes in $M$, the calculated equilibrium temperature from the previous iteration will then become the initial temperature for the next iteration.
 
 :::{.callout-note icon=false collapse="true"}
 ## Modelling Questions
@@ -522,7 +524,6 @@ G, A, B = 3.8, 204, 2.17
 ![](Chapter1Media\FlowChart2.png){fig-align="center" width="100%"}
 ---
 **M11.** Based on the flowchart, construct the code to compute the ice-albedo model and plot the graphs for increasing and decreasing solar multiplier ($M$).
-
 :::
 
 #### 8.6 UNDERSTANDING THE GRAPH

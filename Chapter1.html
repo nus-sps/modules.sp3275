@@ -392,7 +392,7 @@ Assume there is a radiative equilibrium both at the top of the atmosphere and at
 <p>From the previous simplified equation in <strong>Exercise 3</strong>, derive the equation to calculate the effective temperature of the planet (<span class="math inline">\(T_p\)</span>) with an atmosphere.</p>
 </div>
 <div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
-<p><span class="math display">\[F_g = F_s\frac{(1+\tau_s)}{(1+\tau_g)}\]</span> <span class="math display">\[\sigma T^4 =  \frac{S_0 * (1-\alpha) *\pi R^2}{ 4\pi R^2} * \frac{(1+\tau_s)}{(1+\tau_g)}\]</span> <span class="math display">\[T = \sqrt[4]{\frac{S_0 * (1-\alpha)*(1+\tau_s)}{4\sigma(1+\tau_g)}}\]</span> With regards to the second step, <span class="math inline">\(F_s\)</span> is the solar flux averaged over Earth’s entire surface area. Hence, we can multiply the solar constant by the cross-sectional area of the planet to get the total amount of solar radiation received on Earth, and divide it by the entire surface area of the planet, giving us <span class="math inline">\(F_s\)</span>.</p>
+<p><span class="math display">\[F_g = F_s\frac{(1+\tau_s)}{(1+\tau_g)}\]</span> <span class="math display">\[\sigma T^4 =  \frac{S_0 * (1-\alpha) *\pi R^2}{ 4\pi R^2} * \frac{(1+\tau_s)}{(1+\tau_g)}\]</span> <span class="math display">\[T = \sqrt[4]{\frac{S_0 * (1-\alpha)*(1+\tau_s)}{4\sigma(1+\tau_g)}}\]</span> With regards to the second step, <span class="math inline">\(F_s\)</span> is the average solar flux received across Earth’s entire surface area. Hence, we can multiply the solar constant by the cross-sectional area of the planet to get the total amount of solar radiation received on Earth, and divide it by the entire surface area of the planet, giving us <span class="math inline">\(F_s\)</span>.</p>
 </div>
 </div>
 </div>
@@ -649,7 +649,7 @@ The energy emitted/lost at each latitude band is given by the local temperature 
 \tag{10}
 F_{loss} = A + B * T_i + G * (T_i - T_{avg})
 \end{equation}\]</span></p>
-<p><span class="math inline">\(G\)</span> represents heat transfer coefficient, which is a constant that is empirically derived. You may find the constant under M9. <span class="math inline">\(F_{loss}\)</span> at each latitude band is then calculated.</p>
+<p><span class="math inline">\(G\)</span> represents heat transfer coefficient. <span class="math inline">\(F_{loss}\)</span> at each latitude band is then calculated.</p>
 </section>
 </section>
 <section id="local-and-average-albedo" class="level4">
@@ -687,6 +687,7 @@ To find the equilibrium average planet temperature (<span class="math inline">\(
 <p style="text-align: justify;">
 You will assume that it is the same initial temperature (<span class="math inline">\(T_i\)</span> = 203K) at each latitude band (with <span class="math inline">\(M\)</span> = 0.6). Therefore, all local albedos at the initial stage is equivalent to 0.6 (Earth is covered in ice).
 </p>
+<p>In this model, you are tasked to model Earth’s temperature by changing <span class="math inline">\(M\)</span> to simulate when solar radiation received increases (0.6 to 1.4) or decreases (1.4 to 0.6). Do note that following incremental changes in <span class="math inline">\(M\)</span>, the calculated equilibrium temperature from the previous iteration will then become the initial temperature for the next iteration.</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
