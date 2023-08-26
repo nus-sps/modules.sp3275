@@ -6,7 +6,7 @@ project:
 
 title: "Theme 1: What affects Earth's climate?"
 subtitle: "Understanding Earth's Climate and Energy Balance Models (EBMs)"
-author: "Lead authors: Derek Yuen, Jace Han <br> Corresponding author: Dr. Linda Sellou"
+author: "Lead authors: Derek Yuen, Jace Han <br> Collaborators: Guan Xin <br> Corresponding author: Dr. Linda Sellou"
 
 format: 
   html:
