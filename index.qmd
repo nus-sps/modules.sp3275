@@ -1,0 +1,19 @@
+
+---
+title: 'SP3275 Homepage'
+subtitle: We're currently under construction, sorry!
+format:
+  html:
+    toc: true
+    toc-location: right
+    code-fold: true
+---
+
+## Looking for Chapter Pages?
+
+<p style='text-align: justify;'>The chapter pages can be found here:</p>
+1. <p style='text-align: justify;'>[Chapter 0: How do we model the Earth?](https://nus-sps.github.io/modules.sp3275/Chapter0.html)</p>
+2. <p style='text-align: justify;'>[Chapter 1: What affects Earth's climate?](https://nus-sps.github.io/modules.sp3275/Chapter1.html)</p>
+4. <p style='text-align: justify;'>[Chapter 2: How does life affect the planet's temperature stability?](https://nus-sps.github.io/modules.sp3275/Chapter2.html)</p>
+5. <p style='text-align: justify;'>[Chapter 3: Importance of oceans](https://nus-sps.github.io/modules.sp3275/Chapter3.html)</p>
+6. <p style='text-align: justify;'>[Chapter 4: Water treatment methods](https://nus-sps.github.io/modules.sp3275/Chapter4.html)</p>
